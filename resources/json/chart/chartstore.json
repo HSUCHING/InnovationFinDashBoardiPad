@@ -1,0 +1,31 @@
+{
+    "items": [
+        {
+            "Qua": "Q1",
+            "CompanyA": 7360,
+            "CompanyB": 0,
+            "CompanyC": 5642,
+            "CompanyD": 862
+        },
+        {
+            "Qua": "Q2",
+            "CompanyA": 18573,
+            "CompanyB": 0,
+            "CompanyC": 3161,
+            "CompanyD": 626
+        },
+        {
+            "Qua": "Q3",
+            "CompanyA": 13570,
+            "CompanyB": 0,
+            "CompanyC": 5274,
+            "CompanyD": 543
+        },
+        {
+            "Qua": "Q4",
+            "CompanyA": 8798,
+            "CompanyB": 10187,
+            "CompanyC": 4745,
+            "CompanyD": 3484
+        }]
+}

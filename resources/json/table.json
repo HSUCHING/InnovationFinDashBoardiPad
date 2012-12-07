@@ -1,0 +1,21 @@
+{
+    "app":"Dupont",
+    "field1":"Company",
+    "field2":"Company Code",
+    "field3":"Product",
+    "field4":"Area",
+    "value":"Value",
+    "items":[{
+        "field1Value":"",
+        "field2Value":200,
+        "field3Value":"600",
+        "field4Value":"690",
+        "value":"1000"
+    },{
+        "field1Value":"600",
+        "field2Value":500,
+        "field3Value":"900",
+        "field4Value":"290",
+        "value":"2000"
+    }]
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        body{
+            background-color: blue;
+        }
+        #tableshow{
+            border-collapse:separate;
+            /*-webkit-border-bottom-right-radius: 1px;*/
+            /*-webkit-box-shadow: 5px 5px 7px white;*/
+        }
+
+        #tableshow th{
+            width:150px;
+        }
+
+        #tableshow tr{
+            height:50px;
+        }
+
+        #tableshow th.left{
+            width:180px;
+        }
+
+        #tableshow th.right{
+            width:180px;
+        }
+
+        #tableshow thead th.left{
+            background:url('resources/images/table/bg_te.png') right no-repeat;
+        }
+        #tableshow thead th.right{
+            background:url('resources/images/table/bg_te.png') left no-repeat;
+        }
+
+        #tableshow thead th{
+            background:url('resources/images/table/bg_te.png') right no-repeat;
+        }
+
+        #tableshow tbody tr:nth-child(even) th{
+            background:url('resources/images/table/bg_tb_even.png') right no-repeat;
+        }
+
+        #tableshow tbody tr:nth-child(odd) th{
+            background:url('resources/images/table/bg_tb_odd.png') right no-repeat;
+        }
+
+        #tableshow tbody tr:nth-child(odd) th.right{
+            background:url('resources/images/table/bg_tb_odd.png') left no-repeat;
+        }
+
+
+        #tableshow tbody tr:nth-child(even) th.right{
+            background:url('resources/images/table/bg_tb_even.png') left no-repeat;
+
+        }
+
+
+
+
+
+        #tableshow tbody tr:nth-child(even) th.on{
+            height: 85px;
+            background: -webkit-linear-gradient(top,#FFF000,#FFFFFF);
+        }
+
+        #tableshow tbody tr:nth-child(odd) th.on{
+            height: 85px;
+            background: -webkit-linear-gradient(top,#FFF000,#FFFFFF);
+        }
+
+
+        #tableshow tr.on th:first-child{
+            height:85px;
+            background: -webkit-linear-gradient(left,#FFF000,#FFFFFF);
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+
+        }
+
+        #tableshow tr.on th:last-child{
+            height:85px;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background: -webkit-linear-gradient(right,#FFf000,#FFFFFF);
+        }
+
+
+    </style>
+    <script type="text/javascript">
+        function getElementsByClassName(className, tag, elm){
+            var tag = tag || "*";
+            var elm = elm || document;
+            var returnElements = [];
+            var trselected=document.getElementsByClassName(className).item();
+            returnElements.push(trselected);
+            var elements = (tag == "*" && elm.all)? elm.all : trselected.children;
+            var current;
+            var length = elements.length;
+            for(var i=0; i<length; i++){
+                returnElements.push(elements[i]);
+            }
+            return returnElements;
+        }
+
+        function addClassName(elm, className){
+            var currentClass = elm.className;
+            if(!new RegExp(("(^|\\s)" + className + "(\\s|$)"), "i").test(currentClass)){
+                elm.className = currentClass + ((currentClass.length > 0)? " " : "") + className;
+            }
+            return elm.className;
+        }
+
+        function removeClassName(elm, className){
+            var classToRemove = new RegExp(("(^|\\s)" + className + "(\\s|$)"), "i");
+            elm.className = elm.className.replace(classToRemove, "").replace(/^\s+|\s+$/g, "");
+            return elm.className;
+        }
+
+        function activateThisColumn(column,selected) {
+            var table = document.getElementById('tableshow');
+
+            // first, remove the 'on' class from all other th's
+            var ths = table.getElementsByTagName('tr');
+            for (var g=0; g<ths.length; g++) {
+                removeClassName(ths[g], 'on');
+            }
+            var ths2 = table.getElementsByTagName('th');
+            for (var g=0; g<ths2.length; g++) {
+                removeClassName(ths2[g], 'on');
+            }
+
+
+            // now, add the class 'on' to the selected th
+//            var newths = getElementsByClassName(column, 'tr', table);
+//            for (var h=0; h<newths.length; h++) {
+//                addClassName(newths[h], 'on');
+//            }
+            var newths=[];
+            newths.push(selected);
+            for(var i=0;i<selected.children.length;i++){
+                newths.push(selected.children[i]);
+            }
+
+
+            for (var h=0; h<newths.length; h++) {
+                addClassName(newths[h], 'on');
+            }
+        }
+
+
+
+
+
+
+    </script>
+
+</head>
+<body>
+
+    <table id="tableshow">
+        <thead>
+            <tr>
+                <th class="theadsidetitle left">&nbsp;</th>
+                <th class="theadside">Area</th>
+                <th class="theadside">Code</th>
+                <th class="theadside">Company</th>
+                <th class="theadside">Product</th>
+                <th class="theadside right">Value</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="choice" onclick="activateThisColumn('choice',this)">
+                <th class="left">1</th>
+                <th>4,000</th>
+                <th>400</th>
+                <th>40</th>
+                <th>4</th>
+                <th class="right">None</th>
+            </tr>
+            <tr class="choice" onclick="activateThisColumn('choice',this)">
+                <th class="left">2</th>
+                <th>4,000</th>
+                <th>400</th>
+                <th>40</th>
+                <th>4</th>
+                <th class="right">None</th>
+            </tr>
+            <tr class="choice" onclick="activateThisColumn('choice',this)">
+                <th class="left">3</th>
+                <th>4,000</th>
+                <th>400</th>
+                <th>40</th>
+                <th>4</th>
+                <th class="right">None</th>
+            </tr>
+            <tr class="choice" onclick="activateThisColumn('choice',this)">
+                <th class="left">4</th>
+                <th>4,000</th>
+                <th>400</th>
+                <th>40</th>
+                <th>4</th>
+                <th class="right">None</th>
+            </tr>
+            <tr class="choice" onclick="activateThisColumn('choice',this)">
+                <th class="left">5</th>
+                <th>4,000</th>
+                <th>400</th>
+                <th>40</th>
+                <th>4</th>
+                <th class="right">None</th>
+            </tr>
+        </tbody>
+
+    </table>
+
+
+</body>
+</html>
