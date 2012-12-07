@@ -13,20 +13,20 @@ Ext.define("InnovationFinDashBoard.view.Main", {
             ui: 'dark',
             docked: 'top',
             cls: 'navibar',
-            height: 80,
-            items:[{
-                xtype: 'button',
-                ui: 'confirm-forward',
-                id:'forwardBtn',
-//                disabled:true,
-                hidden:true,
-                text:'forward',
-                align: 'right',
-                action: 'forwardToTab'
-            }]
+            height: 80
+//            items:[{
+//                xtype: 'button',
+//                ui: 'confirm-forward',
+//                id:'forwardBtn',
+////                disabled:true,
+//                hidden:true,
+//                text:'forward',
+//                align: 'right',
+//                action: 'forwardToTab'
+//            }]
         },
         items: [{
-            title: '<div class="hometop"></div>',
+            title: '<div style="margin-top: 10px; padding-bottom: 10px; font-size: 30px;font-family: helvetica">InnovationFinDashBoard</div>',
             layout: {
                 type: 'vbox',
                 align: 'stretch',
@@ -44,30 +44,16 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     fullscreen: true
                 },
                 defaults: {
-                    width: 150,
-                    height: 100,
+                    width: 300,
+                    height: 200,
                     mode: 'img',
                     cls: 'imgborder',
                     listeners: {
                         tap: function(img, ev) {
-                            //                            Ext.Msg.alert(img.id);
-                            //                            var tabview=new InnovationFinDashBoard.view.TabViewShow();
-                            //                            Ext.getCmp('myPanel').push(
-                            ////                                title:'Second',
-                            ////                                html:'Second view!'
-                            //                                tabview
-                            ////                                {
-                            ////                                    xtype:'tabViewShow',
-                            ////                                    id:'tabPanel'
-                            ////                                }
-                            //                            )
-//                            Ext.Msg.alert(img.id);
-
-                            var treeview = new InnovationFinDashBoard.view.TreeView({
-                                "appName": img.id
-                            });
-                            Ext.getCmp('myPanel').push(
-                                treeview)
+                            Ext.getCmp('myPanel').push({
+                                title: 'Second',
+                                html: 'Second view!'
+                            })
                         }
                     }
                 },
@@ -75,21 +61,21 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     xtype: 'image',
                     id: 'dupont',
                     html: 'Dupont',
-                    src: 'resources/images/dupont.jpg'
+                    src: 'resources/images/Picture1.png'
                 },
                     {
-                        width: 150
+                        width: 20
                     },
                     {
                         xtype: 'image',
-                        src: 'resources/images/Data_analysis.jpg'
+                        src: 'resources/images/Picture2.png'
                     },
                     {
-                        width: 150
+                        width: 20
                     },
                     {
                         xtype: 'image',
-                        src: 'resources/images/IDEA.jpg'
+                        src: 'resources/images/Picture3.png'
                     }]
             },
                 {
@@ -103,39 +89,38 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                         fullscreen: true
                     },
                     defaults: {
-                        width: 150,
-                        height: 100,
+                        width: 300,
+                        height: 200,
                         mode: 'img',
                         listeners: {
                             tap: function(img, ev) {
-                                Ext.Msg.alert(img.id);
-                                Ext.getCmp('myPanel').push({
-                                    title: 'Second',
-                                    html: 'Second view!'
-                                })
-
+                                var treeview = new InnovationFinDashBoard.view.TreeView({
+                                    "appName": img.id
+                                });
+                                Ext.getCmp('myPanel').push(
+                                    treeview)
                             }
                         }
                     },
                     items: [{
                         xtype: 'image',
-                        src: 'resources/images/FICOADD01.png',
+                        src: 'resources/images//Picture4.png',
                         flex: 1
                     },
                         {
-                            width: 150
+                            width: 20
                         },
                         {
                             xtype: 'image',
-                            src: 'resources/images/FICOADD02.jpg',
+                            src: 'resources/images/PictureDopunt.png',
                             flex: 1
                         },
                         {
-                            width: 150
+                            width: 20
                         },
                         {
                             xtype: 'image',
-                            src: 'resources/images/FICOADD03.jpg',
+                            src: 'resources/images//Picture5.png',
                             flex: 1
                         }]
                 },
@@ -150,39 +135,38 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                         fullscreen: true
                     },
                     defaults: {
-                        width: 150,
-                        height: 100,
+                        width: 300,
+                        height: 200,
                         mode: 'img',
                         listeners: {
                             tap: function(img, ev) {
-                                Ext.Msg.alert(img.id);
+
                                 Ext.getCmp('myPanel').push({
                                     title: 'Second',
                                     html: 'Second view!'
                                 })
-
                             }
                         }
                     },
                     items: [{
                         xtype: 'image',
-                        src: 'resources/images/FICOADD04.jpg',
+                        src: 'resources/images/Picture6.png',
                         flex: 1
                     },
                         {
-                            width: 150
+                            width: 20
                         },
                         {
                             xtype: 'image',
-                            src: 'resources/images/FICOADD05.gif',
+                            src: 'resources/images/Picture7.png',
                             flex: 1
                         },
                         {
-                            width: 150
+                            width: 20
                         },
                         {
                             xtype: 'image',
-                            src: 'resources/images/FICOADD06.jpg',
+                            src: 'resources/images/Picture8.png',
                             flex: 1
                         }]
                 }]

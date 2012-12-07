@@ -27,7 +27,13 @@ Ext.define("InnovationFinDashBoard.view.TreeView", {
                 },
                 width:50,
                 items:[{
-                    xtype:'button'
+                    xtype:'button',
+                    id:'flipbutton',
+                    ui:'normal',
+                    disabled:true,
+                    disabledCls:'rightflipdisable',
+//                    cls:'rightflipenable'
+                    action: 'forwardToTab'
                 }]
             }]
 

@@ -9714,21 +9714,40 @@ input[type="search"]::-webkit-search-cancel-button {
 /*Personal*/
 
 .x-layout-card-item {
-    background: -webkit-linear-gradient(top, #000000, #00A3EF) !important;
-    color: #ffff00 !important;
+    background: -webkit-linear-gradient(top, #FFFFFF, #FFFFFF) !important;
+    color: #000000 !important;
 }
 
 
 .navibar{
     color:#ffff00 !important;
-    background: none !important;
-    background: -webkit-linear-gradient(bottom, #000000, #893EB5) !important;
+    border:1px solid #000000 !important;
+    border-bottom:5px solid #666666 !important;
+    background: -webkit-linear-gradient(bottom, #555555, #000000) !important;
 
 
     /*background: url('../images/Logo.png') no-repeat center !important;*/
     /*background:url('../images/Logo.png') no-repeat center -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b8c4cb), to(#f6f6f8)) !important;*/
 }
 
+.rightflipdisable{
+    /*background: rgb(220,220,220) url('../icons/navigation_right_arrow.png') no-repeat center center !important;*/
+    background-image: url('../icons/navigation_right_arrow.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-left: 2px solid rgb(200,200,200);
+    -webkit-border-radius: 0px;
+}
+
+.rightflipenable{
+    /*background: rgb(220,220,220) url('../icons/navigation_right_arrow.png') no-repeat center center !important;*/
+    background-image: url('../icons/navigation_right_arrow_grey.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-left: 2px solid rgb(200,200,200);
+    -webkit-border-radius: 0px;
+    text-indent: 300px;
+}
 
 .hometop{
     background: url('../images/Logo.png') no-repeat center top !important;
