@@ -21,11 +21,11 @@ Ext.define("InnovationFinDashBoard.view.TreeView", {
                 xtype: 'panel',
                 id: 'paneltreeview'
             },{
+                width:50,
                 xtype:'panel',
                 layout:{
                     type:'fit'
                 },
-                width:50,
                 items:[{
                     xtype:'button',
                     id:'flipbutton',

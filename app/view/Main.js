@@ -13,7 +13,8 @@ Ext.define("InnovationFinDashBoard.view.Main", {
             ui: 'dark',
             docked: 'top',
             cls: 'navibar',
-            height: 80
+            height: 80,
+            id:'navi'
 //            items:[{
 //                xtype: 'button',
 //                ui: 'confirm-forward',
@@ -95,7 +96,8 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                         listeners: {
                             tap: function(img, ev) {
                                 var treeview = new InnovationFinDashBoard.view.TreeView({
-                                    "appName": img.id
+//                                    "appName": img.id,
+                                    "title":img.emb
                                 });
                                 Ext.getCmp('myPanel').push(
                                     treeview)
@@ -104,7 +106,7 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     },
                     items: [{
                         xtype: 'image',
-                        src: 'resources/images//Picture4.png',
+                        src: 'resources/images/Picture4.png',
                         flex: 1
                     },
                         {
@@ -112,7 +114,8 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                         },
                         {
                             xtype: 'image',
-                            src: 'resources/images/PictureDopunt.png',
+                            emb:'Dupont Analysis',
+                            src: 'resources/images/PictureDupont.png',
                             flex: 1
                         },
                         {
@@ -120,7 +123,7 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                         },
                         {
                             xtype: 'image',
-                            src: 'resources/images//Picture5.png',
+                            src: 'resources/images/Picture5.png',
                             flex: 1
                         }]
                 },

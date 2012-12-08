@@ -9739,6 +9739,17 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-border-radius: 0px;
 }
 
+.leftflip{
+    background-image: url('../icons/navigation_left_arrow_grey.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-left: 2px solid rgb(200,200,200);
+    -webkit-border-radius: 0px;
+    text-indent: 300px;
+}
+
+
+
 .rightflipenable{
     /*background: rgb(220,220,220) url('../icons/navigation_right_arrow.png') no-repeat center center !important;*/
     background-image: url('../icons/navigation_right_arrow_grey.png');

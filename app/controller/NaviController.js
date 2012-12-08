@@ -19,8 +19,8 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
         id: 'Navicontroller',
         refs: {
             naviview:'#myPanel',
-            ForwardToTab:'button[action=forwardToTab]'
-
+            ForwardToTab:'button[action=forwardToTab]',
+            ForwardToTree:'button[action=forwardToTree]'
         },
         control: {
             naviview:{
@@ -28,15 +28,19 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
             },
             ForwardToTab:{
                 tap:'forwardToTab'
+            },
+            ForwardToTree:{
+                tap:'forwardToTree'
             }
 
         }
     },
 
     pushviewnavi:function(navi,obj,eOpts){
-//        if(obj.id=="treeview"){
+        if(obj.id=="treeview"){
             this.pushtreeview(navi,obj,eOpts);
-//        }else if(obj.id=="myPanel"){
+        }
+//        else if(obj.id=="myPanel"){
 //            Ext.getCmp('forwardBtn').hide();
 //        }else if(obj.id='tabPanel'){
 //            Ext.getCmp('forwardBtn').hide();
@@ -360,15 +364,26 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
     },
 
     naviTo:function(selectcontent) {
-        var tabview = new InnovationFinDashBoard.view.TabViewShow({
+//        var tabview = new InnovationFinDashBoard.view.TabViewShow({
+//            dupontComponent: selectcontent,
+//            title:selectcontent
+//        });
+        var tabview = new InnovationFinDashBoard.view.TabView({
             dupontComponent: selectcontent,
             title:selectcontent
         });
         Ext.getCmp('myPanel').push(tabview);
+        temp.childNodes[0].style.stroke="#808080";
+        Ext.getCmp('navi').items.items[0].hide();
     },
 
     forwardToTab:function(btn){
         this.naviTo(btn.getText());
+    },
+    forwardToTree:function(btn){
+        Ext.getCmp('myPanel').pop();
+        Ext.getCmp('navi').items.items[0].show();
+
     }
 
 })

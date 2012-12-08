@@ -38,7 +38,8 @@ Ext.application({
             'MapPanel',
             'ChartPanel',
             'ColumnChart',
-            'PieChart'
+            'PieChart',
+            'TabView'
 
     ],
 
