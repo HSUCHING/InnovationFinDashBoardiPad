@@ -14,7 +14,26 @@ Ext.define("InnovationFinDashBoard.view.Main", {
             docked: 'top',
             cls: 'navibar',
             height: 80,
-            id:'navi'
+            id:'navi',
+            items:[{
+                xtype:'panel',
+                id:'settingpanel',
+                hidden:true,
+                width:50,
+                align:'right',
+                layout:{
+                    type:'vbox',
+                    align: 'stretch',
+                    pack: 'justify'
+                },
+                items:[{
+                    xtype:'button',
+                    cls:'settingCls'
+                },{
+                    xtype:'button',
+                    cls:'addCls'
+                }]
+            }]
 //            items:[{
 //                xtype: 'button',
 //                ui: 'confirm-forward',

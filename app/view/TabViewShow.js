@@ -15,7 +15,7 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
         tabBarPosition:'bottom',
 
         fullscreen:true,
-//            activeItem:1,
+//        activeItem:1,
         layout:{animation:{type:'flip',direction:'right',duration:1000}},
         items:[
             {

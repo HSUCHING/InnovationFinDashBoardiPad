@@ -10,6 +10,7 @@ Ext.define('InnovationFinDashBoard.view.ChartPanel', {
     xtype : 'chartpanel',
 
     config:{
+//        cls:'chartpanel',
         layout:'card',
         tabBar:{
             docked:'top',

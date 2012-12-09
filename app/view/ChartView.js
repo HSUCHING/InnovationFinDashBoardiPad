@@ -171,6 +171,8 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
             },{
                 flex:1,
                 id:'rightchart',
+                cls:'rightchart',
+                showed:false,
                 hidden:true,
                 xtype:'panel'
             }]

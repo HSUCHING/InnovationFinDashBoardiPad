@@ -91,8 +91,11 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                     google.maps.event.addListener(marker1, 'click',
                         function(event) {
                             renderChart(marker1);
-                            Ext.getCmp('rightchart').add({xtype:'chartpanel',height:480});
-                            Ext.getCmp('rightchart').show();
+                            if(Ext.getCmp('rightchart').showed==false){
+                                Ext.getCmp('rightchart').add({xtype:'chartpanel',height:480});
+                                Ext.getCmp('rightchart').show();
+                                Ext.getCmp('rightchart').showed=true;
+                            }
                         });
                     google.maps.event.addListener(marker2, 'click',
                         function(event) {

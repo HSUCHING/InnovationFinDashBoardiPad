@@ -51,9 +51,14 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem1", {
                     mode:'img',
                     src:'resources/icons/dimension/Area.png',
                     layout:'fit',
+                    taped:false,
                     listeners:{
                         tap:function(){
-                            Ext.getCmp('leftmap').add({xtype:'mapPanel'});
+                            if(this.taped==false){
+                                 Ext.getCmp('leftmap').add({xtype:'mapPanel'});
+                                this.taped=true;
+                            }
+
                         }
                     }
                 }],

@@ -24,7 +24,8 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
         },
         control: {
             naviview:{
-                push:'pushviewnavi'
+                push:'pushviewnavi',
+                pop:'popviewnavi'
             },
             ForwardToTab:{
                 tap:'forwardToTab'
@@ -39,12 +40,13 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
     pushviewnavi:function(navi,obj,eOpts){
         if(obj.id=="treeview"){
             this.pushtreeview(navi,obj,eOpts);
+            Ext.getCmp('settingpanel').show();
         }
-//        else if(obj.id=="myPanel"){
-//            Ext.getCmp('forwardBtn').hide();
-//        }else if(obj.id='tabPanel'){
-//            Ext.getCmp('forwardBtn').hide();
-//        }
+    },
+    popviewnavi:function(navi,obj,eOpts){
+        if(obj.id=="treeview"){
+            Ext.getCmp('settingpanel').hide();
+        }
     },
 
     pushtreeview: function(navi,treeobj,eOpts) {
