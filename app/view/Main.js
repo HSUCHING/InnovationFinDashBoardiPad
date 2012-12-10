@@ -13,16 +13,16 @@ Ext.define("InnovationFinDashBoard.view.Main", {
             ui: 'dark',
             docked: 'top',
             cls: 'navibar',
-            height: 80,
+//            height: 20,
             id:'navi',
             items:[{
                 xtype:'panel',
                 id:'settingpanel',
                 hidden:true,
-                width:50,
+                width:80,
                 align:'right',
                 layout:{
-                    type:'vbox',
+                    type:'hbox',
                     align: 'stretch',
                     pack: 'justify'
                 },
@@ -46,7 +46,7 @@ Ext.define("InnovationFinDashBoard.view.Main", {
 //            }]
         },
         items: [{
-            title: '<div style="margin-top: 10px; padding-bottom: 10px; font-size: 30px;font-family: helvetica">InnovationFinDashBoard</div>',
+            title: '<div style="font-size: 20px;font-family: helvetica">InnovationFinDashBoard</div>',
             layout: {
                 type: 'vbox',
                 align: 'stretch',

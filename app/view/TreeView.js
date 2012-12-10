@@ -19,17 +19,19 @@ Ext.define("InnovationFinDashBoard.view.TreeView", {
         items: [
             {
                 xtype: 'panel',
-                id: 'paneltreeview'
+                id: 'paneltreeview',
+                docked:'left'
             },{
                 width:50,
                 xtype:'panel',
                 layout:{
                     type:'fit'
                 },
+                docked:'right',
                 items:[{
                     xtype:'button',
                     id:'flipbutton',
-                    ui:'normal',
+//                    ui:'normal',
                     disabled:true,
                     disabledCls:'rightflipdisable',
 //                    cls:'rightflipenable'

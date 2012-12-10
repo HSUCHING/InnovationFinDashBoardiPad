@@ -54,12 +54,12 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
 //        Ext.getCmp('forwardBtn').show();
 //        Ext.getCmp('forwardBtn').disable();
         var margin = {
-                top: 20,
-                right: 120,
+                top: 40,
+                right: 100,
                 bottom: 20,
                 left: 120
             },
-            width = 1000 - margin.right - margin.left,
+            width = 900 - margin.right - margin.left,
             height = 650 - margin.top - margin.bottom,
             i = 0,
             duration = 500,

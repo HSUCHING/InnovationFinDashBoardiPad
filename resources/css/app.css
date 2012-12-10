@@ -9724,6 +9724,7 @@ input[type="search"]::-webkit-search-cancel-button {
     border:1px solid #000000 !important;
     border-bottom:5px solid #666666 !important;
     background: -webkit-linear-gradient(bottom, #555555, #000000) !important;
+    height: 50px !important;
 
 
     /*background: url('../images/Logo.png') no-repeat center !important;*/
@@ -9803,13 +9804,13 @@ input[type="search"]::-webkit-search-cancel-button {
     background-size:cover;
 }
 .settingCls:active{
-    margin-top:2px !important;
-    margin-left:10px !important;
+    margin-top:4px !important;
+    /*margin-left:10px !important;*/
     /*background: #00A3EF !important;*/
 }
 
 .addCls{
-    margin-top: 2px !important;
+    /*margin-top: 2px !important;*/
     width:35px !important;
     height:35px !important;
     border: none !important;
@@ -9821,7 +9822,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .addCls:active{
     margin-top:4px !important;
-    margin-left:10px !important;
+    /*margin-left:10px !important;*/
     /*background: #00A3EF !important;*/
 }
 
@@ -9934,6 +9935,10 @@ input[type="search"]::-webkit-search-cancel-button {
     margin-bottom: 20px;
 }
 
+
+#TabView{
+    z-index:1;
+}
 
 
 .detail{
