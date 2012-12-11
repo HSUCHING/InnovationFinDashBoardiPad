@@ -15,14 +15,22 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
             align:'stretch'
         },
 
+//        scrollable:'both',
 //        style:{"border":"1px solid red"},
         height:'100%',
         items:[{
 //            flex:1,
             xtype:'panel',
             items:[{
+                xtype : 'toolbar',
+                id:'toolbartop',
+                docked : 'top',
+                height : 30
+            },{
                 xtype : 'panel',
                 id: 'dimensionbar',
+//                scrollable:'both',
+//                draggable:true,
 //                scrollable : {
 //                    direction : 'horizontal'
 ////                    slotSnapSize : {
@@ -51,11 +59,6 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
                 },{
                     xtype:'dimensionitem5',id:'dimensionitem5',hidden:true
                 }]
-            },{
-                xtype : 'toolbar',
-                id:'toolbartop',
-                docked : 'top',
-                height : 30
             },{
                 xtype : 'toolbar',
                 docked : 'bottom',
@@ -168,6 +171,7 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
                 flex:1,
 //                height:'100%',
                 id:'leftmap',
+                scrollable:'both',
                 xtype:'panel'
             },{
                 flex:1,

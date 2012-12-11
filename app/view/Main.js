@@ -53,6 +53,7 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                 pack: 'justify',
                 fullscreen: true
             },
+            scrollable:'both',
             style:{"z-index":"1"},
             items: [{
                 id: 'homepanel1',
@@ -73,7 +74,8 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                         tap: function(img, ev) {
                             Ext.getCmp('myPanel').push({
                                 title: 'Second',
-                                html: 'Second view!'
+                                html: 'Second view!',
+                                scrollable:'both'
                             })
                         }
                     }
@@ -118,6 +120,7 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                                 var treeview = new InnovationFinDashBoard.view.TreeView({
 //                                    "appName": img.id,
                                     "title":img.emb
+
                                 });
                                 Ext.getCmp('myPanel').push(
                                     treeview)

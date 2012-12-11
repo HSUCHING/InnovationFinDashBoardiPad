@@ -13,7 +13,6 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
         id:'tabPanel',
         ui:'dark',
         tabBarPosition:'bottom',
-
         fullscreen:true,
 //        activeItem:1,
         layout:{animation:{type:'flip',direction:'right',duration:1000}},
@@ -21,7 +20,8 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
             {
                 title:'Table View',
                 xtype:'tableview',
-                iconCls:'info'
+                iconCls:'info',
+                scrollable:'both'
             },
             {
                 title:'Chart View',
