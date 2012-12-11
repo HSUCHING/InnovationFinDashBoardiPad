@@ -16,6 +16,7 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
             xtype: "map",
             id: 'map',
             width: '100%',
+//            height:'100%',
             height: 525,
             style: {
                 "text-align": "center",
@@ -24,7 +25,7 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
             //                    useCurrentLocation:true
             mapOptions: {
                 center: new google.maps.LatLng(30.66, 104.06),
-                zoom: 5
+                zoom: 3
                 //                        navigationControlOptions: {
                 //                            style: google.maps.NavigationControlStyle.DEFAULT
                 //                        }
@@ -92,7 +93,7 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                         function(event) {
                             renderChart(marker1);
                             if(Ext.getCmp('rightchart').showed==false){
-                                Ext.getCmp('rightchart').add({xtype:'chartpanel',height:480});
+                                Ext.getCmp('rightchart').add({xtype:'chartpanel',height:525});
                                 Ext.getCmp('rightchart').show();
                                 Ext.getCmp('rightchart').showed=true;
                             }

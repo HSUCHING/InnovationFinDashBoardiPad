@@ -15,6 +15,8 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
             align:'stretch'
         },
 
+//        style:{"border":"1px solid red"},
+        height:'100%',
         items:[{
 //            flex:1,
             xtype:'panel',
@@ -28,7 +30,6 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
 ////                        y : 5
 ////                    }
 //                },
-
                 height:'100%',
                 layout:{
                     type:'hbox',
@@ -138,6 +139,7 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
 ////                    }
 //                },
             height:'100%',
+            style:{"border":"1px solid red"},
             layout:{
                     type:'hbox',
                     align:'center',
@@ -158,7 +160,6 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
         },{
 //            flex:3,
             xtype:'panel',
-            height:'100%',
             layout:{
                 type:'hbox',
                 align:'stretch',
@@ -166,17 +167,18 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
             },
             items:[{
                 flex:1,
+//                height:'100%',
                 id:'leftmap',
                 xtype:'panel'
             },{
                 flex:1,
+//                height:'100%',
                 id:'rightchart',
                 cls:'rightchart',
                 showed:false,
                 hidden:true,
                 xtype:'panel'
             }]
-        }
-        ]
+        }]
     }
 })

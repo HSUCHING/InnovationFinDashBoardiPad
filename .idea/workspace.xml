@@ -4,8 +4,13 @@
     <list default="true" id="da18f0ef-eab9-4956-bb9a-e8d3e18c1f5d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controller/NaviController.js" afterPath="$PROJECT_DIR$/app/controller/NaviController.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ChartPanel.js" afterPath="$PROJECT_DIR$/app/view/ChartPanel.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/ChartView.js" afterPath="$PROJECT_DIR$/app/view/ChartView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/Main.js" afterPath="$PROJECT_DIR$/app/view/Main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/MapPanel.js" afterPath="$PROJECT_DIR$/app/view/MapPanel.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/view/TableView.js" afterPath="$PROJECT_DIR$/app/view/TableView.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/css/app.css" afterPath="$PROJECT_DIR$/resources/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/json/table.json" afterPath="$PROJECT_DIR$/resources/json/table.json" />
     </list>
     <ignored path="InnovationFinDashBoard.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,68 +30,64 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="TreeView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/TreeView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="15" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapPanel.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/MapPanel.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="48" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TableView.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/TableView.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="43" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="table.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/json/table.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="16" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="11" selection-start="396" selection-end="396" vertical-scroll-proportion="-0.7096774">
+            <state line="77" column="86" selection-start="1933" selection-end="1979" vertical-scroll-proportion="-12.064516">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NaviController.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controller/NaviController.js">
+      <file leaf-file-name="TabViewShow.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/view/TabViewShow.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="238" column="35" selection-start="10162" selection-end="10162" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1355193583391" expanded="false" signature="5393:5406" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MapPanel.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/view/MapPanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.24469161">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ChartPanel.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/ChartPanel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="22" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ChartView.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/ChartView.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="154" column="59" selection-start="5361" selection-end="5361" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/view/Main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="25" selection-start="363" selection-end="370" vertical-scroll-proportion="0.0">
-              <folding>
-                <marker date="1355193095111" expanded="false" signature="1354:1392" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="app.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/css/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9721" column="8" selection-start="446133" selection-end="446140" vertical-scroll-proportion="-12.68">
+            <state line="9786" column="0" selection-start="447941" selection-end="447941" vertical-scroll-proportion="0.07581967">
               <folding />
             </state>
           </provider>
@@ -105,22 +106,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controller/TreeController.js" />
-        <option value="$PROJECT_DIR$/app/view/TableView.js" />
-        <option value="$PROJECT_DIR$/app/view/TabView.js" />
-        <option value="$PROJECT_DIR$/app/view/PieChart.js" />
-        <option value="$PROJECT_DIR$/app/view/DimensionItem1.js" />
-        <option value="$PROJECT_DIR$/app/view/ChartPanel.js" />
-        <option value="$PROJECT_DIR$/app/view/TabViewShow.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/resources/css/tipTip.css" />
-        <option value="$PROJECT_DIR$/app/view/Main.js" />
-        <option value="$PROJECT_DIR$/resources/css/app.css" />
         <option value="$PROJECT_DIR$/app/view/TreeView.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/app/view/DimensionItem.js" />
+        <option value="$PROJECT_DIR$/app/view/Main.js" />
         <option value="$PROJECT_DIR$/app/controller/NaviController.js" />
+        <option value="$PROJECT_DIR$/resources/js/arcgis.js" />
+        <option value="$PROJECT_DIR$/resources/css/claro.css" />
+        <option value="$PROJECT_DIR$/resources/css/esri.css" />
+        <option value="$PROJECT_DIR$/ArcMaps.html" />
         <option value="$PROJECT_DIR$/app/view/ChartView.js" />
+        <option value="$PROJECT_DIR$/resources/css/app.css" />
+        <option value="$PROJECT_DIR$/app/view/ChartPanel.js" />
         <option value="$PROJECT_DIR$/app/view/MapPanel.js" />
+        <option value="$PROJECT_DIR$/resources/json/table.json" />
+        <option value="$PROJECT_DIR$/app/view/TableView.js" />
       </list>
     </option>
   </component>
@@ -186,6 +187,64 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationFinDashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationFinDashBoardiPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationFinDashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationFinDashBoardiPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tree" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationFinDashBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="InnovationFinDashBoardiPad" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -331,8 +390,9 @@
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3234714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22140221" sideWeight="0.6759531" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.199262" sideWeight="0.6765286" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -341,7 +401,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3240469" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -404,102 +463,114 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/view/DimensionItem5.js">
+    <entry file="file://$PROJECT_DIR$/app/controller/TreeController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.3435115" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.364754">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/TableView.js">
+    <entry file="file://$PROJECT_DIR$/app/controller/TableController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="60" selection-start="915" selection-end="915" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ColumnChart.js">
+    <entry file="file://$PROJECT_DIR$/app/view/DimensionItem1.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.73508596">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/TabViewShow.js">
+    <entry file="file://$PROJECT_DIR$/app/controller/ChartViewController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="20" selection-start="295" selection-end="303" vertical-scroll-proportion="0.33690658" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/TabView.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="19" selection-start="263" selection-end="270" vertical-scroll-proportion="0.15773354" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/tipTip.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="116" selection-end="116" vertical-scroll-proportion="-2.8070445" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/TabController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="94" column="45" selection-start="3064" selection-end="3066" vertical-scroll-proportion="2.1452281">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/TreeView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="15" selection-start="526" selection-end="526" vertical-scroll-proportion="0.2835821">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="11" selection-start="396" selection-end="396" vertical-scroll-proportion="-0.7096774">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controller/NaviController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="35" selection-start="10162" selection-end="10162" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1355193583391" expanded="false" signature="5393:5406" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/ChartPanel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="22" selection-start="335" selection-end="335" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/view/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="25" selection-start="363" selection-end="370" vertical-scroll-proportion="0.0">
-          <folding>
-            <marker date="1355193095111" expanded="false" signature="1354:1392" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9721" column="8" selection-start="446133" selection-end="446140" vertical-scroll-proportion="-12.68">
+        <state line="22" column="15" selection-start="527" selection-end="527" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/ChartView.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="59" selection-start="5361" selection-end="5361" vertical-scroll-proportion="0.0">
+        <state line="176" column="33" selection-start="5956" selection-end="5956" vertical-scroll-proportion="0.68049794">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/TabView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ChartPanel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="25" selection-start="401" selection-end="401" vertical-scroll-proportion="0.35591507">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/ColumnChart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="61" selection-start="598" selection-end="598" vertical-scroll-proportion="0.44489384">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/TabViewShow.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="86" selection-start="1933" selection-end="1979" vertical-scroll-proportion="-12.064516">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/view/MapPanel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="263" selection-end="263" vertical-scroll-proportion="0.24469161">
+        <state line="36" column="48" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/json/tree/tree.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="36" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/json/table.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="283" selection-end="283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/view/TableView.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="43" selection-start="1572" selection-end="1572" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9786" column="0" selection-start="447941" selection-end="447941" vertical-scroll-proportion="0.07581967">
           <folding />
         </state>
       </provider>

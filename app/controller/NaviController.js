@@ -132,7 +132,13 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
 //                    return "translate(" + source.y0 + "," + source.x0 + ")";
 //                }).on("mouseover",mouseover).on("click",click).on("mouseout",blur);
 
-              var nodeEnter = node.enter().append("g").attr("class", "node").attr("title",function(d){return "<div>Actual Value: "+d.value+";</div> <div style='height: 10px;'></div> <div>Target Value: Null</div>";}).attr("transform",
+              var nodeEnter = node.enter().append("g").attr("class", "node").attr("title",function(d){
+                  var value;
+                  if(d.value<0)
+                      value= d.value*(-1);
+                  else
+                      value= d.value;
+                  return "<div>Actual Value: "+ value+";</div> <div style='height: 10px;'></div> <div>Target Value: Null</div>";}).attr("transform",
                 function(d) {
                     return "translate(" + source.y0 + "," + source.x0 + ")";
                 }).on("mouseover",mouseover).on("mouseout",mouseout);
@@ -237,7 +243,7 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
                     else if(d.value<0)
                         return d.value*(-1);
                     else return "";
-                }).style("fill-opacity", 1).style("fill","white").style("font-size","15");
+                }).style("fill-opacity", 1).style("fill","white").style("font-size","10");
 
 
             // Transition nodes to their new position.

@@ -53,6 +53,7 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                 pack: 'justify',
                 fullscreen: true
             },
+            style:{"z-index":"1"},
             items: [{
                 id: 'homepanel1',
                 xtype: 'panel',
