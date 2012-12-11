@@ -12,6 +12,7 @@ Ext.define('InnovationFinDashBoard.view.ColumnChart', {
         title: 'Column',
         iconCls: 'column',
         cls: 'chartpanel',
+        id:'columnchart',
 //        interactions: ['reset', {
 //            type: 'panzoom'
 //        }, {
@@ -44,19 +45,19 @@ Ext.define('InnovationFinDashBoard.view.ColumnChart', {
                     fill:'yellow'
                 },
                 adjustMinimumByMajorUnit: 0,
-                fields: ['CompanyA', 'CompanyB', 'CompanyC', 'CompanyD'],
+                fields: ['Q1', 'Q2', 'Q3', 'Q4'],
                 title: 'Volume'
 
             },
             {
                 type: 'Category',
                 position: 'bottom',
-                fields: ['Qua'],
+                fields: ['Company'],
                 label:{
                     font: '15px Arial',
                     fill:'yellow'
                 },
-                title: 'Quarter'
+                title: 'Company'
             }
         ],
         legend: {
@@ -65,11 +66,11 @@ Ext.define('InnovationFinDashBoard.view.ColumnChart', {
         series: [
             {
                 type: 'column',
-                xField: 'Qua',
-                yField: ['CompanyA', 'CompanyB', 'CompanyC', 'CompanyD'],
+                xField: 'Company',
+                yField: ['Q1', 'Q2', 'Q3', 'Q3'],
                 axis: 'left',
                 highlight: true,
-                title: ['SAP_SH', 'SAP_BJ', 'SAP_CD', 'SAP_NJ'],
+                title: ['Q1', 'Q2', 'Q3', 'Q4'],
                 showInLegend: true
             }
         ]

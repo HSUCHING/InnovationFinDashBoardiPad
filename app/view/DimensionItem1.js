@@ -56,7 +56,8 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem1", {
                         tap:function(){
                             if(this.taped==false){
                                  Ext.getCmp('leftmap').add({xtype:'mapPanel'});
-                                this.taped=true;
+                                 Ext.getCmp('rightchart').add({xtype:'chartpanel',height:525});
+                                 this.taped=true;
                             }
 
                         }

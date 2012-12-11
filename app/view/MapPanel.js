@@ -92,11 +92,15 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                     google.maps.event.addListener(marker1, 'click',
                         function(event) {
                             renderChart(marker1);
-                            if(Ext.getCmp('rightchart').showed==false){
-                                Ext.getCmp('rightchart').add({xtype:'chartpanel',height:525});
-                                Ext.getCmp('rightchart').show();
-                                Ext.getCmp('rightchart').showed=true;
-                            }
+                            var store=Ext.getStore('ChartStore');
+                            store.data.items[0].data.Q1=18782;
+//                            Ext.chart.getChart()
+                            Ext.getCmp('columnchart').redraw();
+//                            if(Ext.getCmp('rightchart').showed==false){
+//                                Ext.getCmp('rightchart').add({xtype:'chartpanel',height:525});
+//                                Ext.getCmp('rightchart').show();
+//                                Ext.getCmp('rightchart').showed=true;
+//                            }
                         });
                     google.maps.event.addListener(marker2, 'click',
                         function(event) {

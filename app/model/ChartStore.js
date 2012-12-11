@@ -10,15 +10,15 @@ Ext.define('InnovationFinDashBoard.model.ChartStore',{
     config:{
         fields:[
             {
-                name:'Qua',type:'string'
+                name:'Company',type:'string'
             },{
-                name:'CompanyA',type:'int'
+                name:'Q1',type:'int'
             },{
-                name:'CompanyB',type:'int'
+                name:'Q2',type:'int'
             },{
-                name:'CompanyC',type:'int'
+                name:'Q3',type:'int'
             },{
-                name:'CompanyD',type:'int'
+                name:'Q4',type:'int'
             }]
     }
 
