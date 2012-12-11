@@ -16,7 +16,7 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
             xtype: "map",
             id: 'map',
             width: '100%',
-            height: 480,
+            height: 525,
             style: {
                 "text-align": "center",
                 "color": "black"

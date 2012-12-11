@@ -173,6 +173,8 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
                 }).style("fill-opacity", 1e-6).style("fill","black").style("font-size",function(d){
                     if(d.name=="+"||d.name=="-"||d.name=="*"||d.name=="/"){
                         return "25"
+                    }else{
+                        return "15"
                     }
                 });
 
@@ -230,7 +232,11 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
                             this.parentElement.removeChild(temp[0]);
                         }
                     }
-                    return d.value;
+                    if(d.value>=0)
+                        return d.value;
+                    else if(d.value<0)
+                        return d.value*(-1);
+                    else return "";
                 }).style("fill-opacity", 1).style("fill","white").style("font-size","15");
 
 
