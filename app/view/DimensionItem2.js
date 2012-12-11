@@ -41,7 +41,7 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem2", {
             {
                 xtype: 'panel',
                 id:'context',
-                html:"Company",
+                html:"Profit Center",
                 layout:{type:'vbox',align:'center',pack:'center'},
                 style:{"text-align":"center","padding-top":"5%"},
                 items:[{

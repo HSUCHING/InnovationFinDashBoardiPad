@@ -139,7 +139,6 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
 ////                    }
 //                },
             height:'100%',
-            style:{"border":"1px solid red"},
             layout:{
                     type:'hbox',
                     align:'center',

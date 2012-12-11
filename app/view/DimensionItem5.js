@@ -40,7 +40,7 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem5", {
             {
                 xtype: 'panel',
                 id:'context',
-                html:"Option",
+                html:"Cost Center",
                 layout:{type:'vbox',align:'center',pack:'center'},
                 style:{"text-align":"center","padding-top":"5%"},
                 items:[{

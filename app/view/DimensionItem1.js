@@ -41,7 +41,7 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem1", {
             {
                 xtype: 'panel',
                 id:'context',
-                html:"Country",
+                html:"Area",
                 layout:{type:'vbox',align:'center',pack:'center'},
                 style:{"text-align":"center","padding-top":"5%"},
                 items:[{
