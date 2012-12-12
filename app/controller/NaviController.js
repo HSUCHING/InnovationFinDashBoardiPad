@@ -90,8 +90,8 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
 
 
 
-//        d3.json("http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=tree",
-        d3.json("resources/json/tree/tree.json",
+        d3.json("http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=tree",
+//        d3.json("resources/json/tree/tree.json",
             function(json) {
                 //    d3.json(jsonresponse, function(json) {
                 root = json;
@@ -363,9 +363,15 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
                     }
                 }
                 this.childNodes[0].style.stroke="yellow";
-                Ext.getCmp('flipbutton').enable();
-                Ext.getCmp('flipbutton').addCls('rightflipenable');
-                Ext.getCmp('flipbutton').setText(d.name);
+                if(d.name!="Return On Investment"){
+                    Ext.getCmp('flipbutton').enable();
+                    Ext.getCmp('flipbutton').addCls('rightflipenable');
+                    Ext.getCmp('flipbutton').setText(d.name);
+                }else{
+                    Ext.getCmp('flipbutton').disable();
+                    Ext.getCmp('flipbutton').removeCls('rightflipenable');
+
+                }
             }
         }
 

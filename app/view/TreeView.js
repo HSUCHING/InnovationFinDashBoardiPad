@@ -33,6 +33,7 @@ Ext.define("InnovationFinDashBoard.view.TreeView", {
                     id:'flipbutton',
 //                    ui:'normal',
                     disabled:true,
+                    style:{"text-indent": "300px"},
                     disabledCls:'rightflipdisable',
 //                    cls:'rightflipenable'
                     action: 'forwardToTab'

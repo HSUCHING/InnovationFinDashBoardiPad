@@ -56219,15 +56219,15 @@ Ext.define('InnovationFinDashBoard.model.ChartStore',{
     config:{
         fields:[
             {
-                name:'Qua',type:'string'
+                name:'Company',type:'string'
             },{
-                name:'CompanyA',type:'int'
+                name:'Q1',type:'int'
             },{
-                name:'CompanyB',type:'int'
+                name:'Q2',type:'int'
             },{
-                name:'CompanyC',type:'int'
+                name:'Q3',type:'int'
             },{
-                name:'CompanyD',type:'int'
+                name:'Q4',type:'int'
             }]
     }
 
@@ -56278,13 +56278,16 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                                     '<tr>',
                                     '<th class="theadsidetitle left">No.</th>',
                                     '<th class="theadside">{field1}</th>',
+                                    '<tpl if="field2!=&quot;&quot;">',
                                     '<th class="theadside">{field2}</th>',
                                     '<th class="theadside">{field3}</th>',
 //                                    '<th class="theadside">{field4}</th>',
+                                    '</tpl>',
                                     '<th class="theadside right">{value}</th>',
                                     '</tr>',
                                     '</thead>',
                                     '<tbody>',
+                                  '<tpl if="field2!=&quot;&quot;">',
                                     '<tpl for="items">',
                                         '<tr class="choice" onclick="activateThisColumn(\'choice\',this)">',
                                         '<th class="left">{#}</th>',
@@ -56292,75 +56295,27 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                                         '<th><tpl if="field2Value!=&quot;&quot;">{field2Value}</tpl><tpl if="field2Value==&quot;&quot;">NULL</tpl></th>',
                                         '<th><tpl if="field3Value!=&quot;&quot;">{field3Value}</tpl><tpl if="field3Value==&quot;&quot;">NULL</tpl></th>',
 //                                        '<th><tpl if="field4Value!=&quot;&quot;">{field4Value}</tpl><tpl if="field4Value==&quot;&quot;">NULL</tpl></th>',
-                                        '<th class="right"><tpl if="value!=&quot;&quot;">{value}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
+                                        '<th class="right"><tpl if="value&gt;0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
                                         '</tr>',
                                     '</tpl>',
+                                  '</tpl>',
+                                  '<tpl if="field2==&quot;&quot;">',
+                                  '<tpl for="items">',
+                                  '<tr class="choice" onclick="activateThisColumn(\'choice\',this)">',
+                                  '<th class="left">{#}</th>',
+                                  '<th><tpl if="field1Value!=&quot;&quot;">{field1Value}</tpl><tpl if="field1Value==&quot;&quot;">NULL</tpl></th>',
+//                                        '<th><tpl if="field4Value!=&quot;&quot;">{field4Value}</tpl><tpl if="field4Value==&quot;&quot;">NULL</tpl></th>',
+                                  '<th class="right"><tpl if="value&gt;=0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
+                                  '</tr>',
+                                  '</tpl>',
+                                  '</tpl>',
                                     '</tbody>',
                                     '</table>');
-
-
-//                              var tpl = new Ext.XTemplate('<table id="tableshow">',
-//                                    '<thead>',
-//                                    '<tr>',
-//                                    '<th class="theadsidetitle left"></th>',
-//                                    '<th class="theadside">Area</th>',
-//                                    '<th class="theadside">Code</th>',
-//                                    '<th class="theadside">Company</th>',
-//                                    '<th class="theadside">Product</th>',
-//                                    '<th class="theadside right">Value</th>',
-//                                    '</tr>',
-//                                    '</thead>',
-//                                    '<tbody>',
-//                                    '<tr class="choiceA" onclick="activateThisColumn(\'choiceA\')">',
-//                                    '<th class="left">1</th>',
-//                                    '<th>4,000</th>',
-//                                    '<th>400</th>',
-//                                    '<th>40</th>',
-//                                    '<th>4</th>',
-//                                    '<th class="right">None</th>',
-//                                    '</tr>',
-//                                    '<tr class="choiceB" onclick="activateThisColumn(\'choiceB\')">',
-//                                    '<th class="left">2</th>',
-//                                    '<th>4,000</th>',
-//                                    '<th>400</th>',
-//                                    '<th>40</th>',
-//                                    '<th>4</th>',
-//                                    '<th class="right">None</th>',
-//                                    '</tr>',
-//                                    '<tr class="choiceC" onclick="activateThisColumn(\'choiceC\')">',
-//                                    '<th class="left">3</th>',
-//                                    '<th>4,000</th>',
-//                                    '<th>400</th>',
-//                                    '<th>40</th>',
-//                                    '<th>4</th>',
-//                                    '<th class="right">None</th>',
-//                                    '</tr>',
-//                                    '<tr class="choiceD" onclick="activateThisColumn(\'choiceD\')">',
-//                                    '<th class="left">4</th>',
-//                                    '<th>4,000</th>',
-//                                    '<th>400</th>',
-//                                    '<th>40</th>',
-//                                    '<th>4</th>',
-//                                    '<th class="right">None</th>',
-//                                    '</tr>',
-//                                    '<tr class="choiceE" onclick="activateThisColumn(\'choiceE\')">',
-//                                    '<th class="left">5</th>',
-//                                    '<th>4,000</th>',
-//                                    '<th>400</th>',
-//                                    '<th>40</th>',
-//                                    '<th>4</th>',
-//                                    '<th class="right">None</th>',
-//                                    '</tr>',
-//                                    '</tbody>',
-//
-//                                    '</table>');
 
                                 var tplHtml=tpl.apply(tablevdata);
 
 //                                Ext.getCmp('tabledataview').add({xtype:'panel',html:this.parent.parent.context});
                                 Ext.getCmp('tabledataview').setHtml(tplHtml);
-
-
 
                             },
                             failure:function(response,opts){
@@ -56412,7 +56367,20 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
             },{
                 xtype:'spacer',
                 width:10
-            },{
+            },
+//                {
+//                    xtype:'spinnerfield',
+//                    id:'spinnertoolbar',
+//                    maxValue:2012,
+//                    minValue:1990,
+//                    value:2000,
+//                    increment:1,
+//                    groupButtons:false,
+//                    width:250,
+//                    label: 'Year:',
+//                    cycle: true
+//            },
+                {
                 text:'Q1'
             },{
                 text:'Q2'
@@ -56435,9 +56403,70 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
             ]
         }
         ]
-
     },
 
+    listeners:{
+      show:function(){
+          Ext.Ajax.request({
+//              url:'resources/json/table.json',
+                            url:'http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=table&tableitem='+Ext.getCmp('TabView').title,
+              success:function(response,opts){
+//                                var obj=Ext.decode(response.responseText);
+//                                console.log(obj);
+//                                console.log(response.responseText);
+
+                  var tablevdata=Ext.decode(response.responseText);
+                  var tpl = new Ext.XTemplate('<table id="tableshow">',
+                      '<thead>',
+                      '<tr>',
+                      '<th class="theadsidetitle left">No.</th>',
+                      '<th class="theadside">{field1}</th>',
+                      '<tpl if="field2!=&quot;&quot;">',
+                      '<th class="theadside">{field2}</th>',
+                      '<th class="theadside">{field3}</th>',
+//                                    '<th class="theadside">{field4}</th>',
+                      '</tpl>',
+                      '<th class="theadside right">{value}</th>',
+                      '</tr>',
+                      '</thead>',
+                      '<tbody>',
+                      '<tpl if="field2!=&quot;&quot;">',
+                      '<tpl for="items">',
+                      '<tr class="choice" onclick="activateThisColumn(\'choice\',this)">',
+                      '<th class="left">{#}</th>',
+                      '<th><tpl if="field1Value!=&quot;&quot;">{field1Value}</tpl><tpl if="field1Value==&quot;&quot;">NULL</tpl></th>',
+                      '<th><tpl if="field2Value!=&quot;&quot;">{field2Value}</tpl><tpl if="field2Value==&quot;&quot;">NULL</tpl></th>',
+                      '<th><tpl if="field3Value!=&quot;&quot;">{field3Value}</tpl><tpl if="field3Value==&quot;&quot;">NULL</tpl></th>',
+//                                        '<th><tpl if="field4Value!=&quot;&quot;">{field4Value}</tpl><tpl if="field4Value==&quot;&quot;">NULL</tpl></th>',
+                      '<th class="right"><tpl if="value&gt;0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
+                      '</tr>',
+                      '</tpl>',
+                      '</tpl>',
+                      '<tpl if="field2==&quot;&quot;">',
+                      '<tpl for="items">',
+                      '<tr class="choice" onclick="activateThisColumn(\'choice\',this)">',
+                      '<th class="left">{#}</th>',
+                      '<th><tpl if="field1Value!=&quot;&quot;">{field1Value}</tpl><tpl if="field1Value==&quot;&quot;">NULL</tpl></th>',
+//                                        '<th><tpl if="field4Value!=&quot;&quot;">{field4Value}</tpl><tpl if="field4Value==&quot;&quot;">NULL</tpl></th>',
+                      '<th class="right"><tpl if="value&gt;=0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
+                      '</tr>',
+                      '</tpl>',
+                      '</tpl>',
+                      '</tbody>',
+                      '</table>');
+
+                  var tplHtml=tpl.apply(tablevdata);
+
+//                                Ext.getCmp('tabledataview').add({xtype:'panel',html:this.parent.parent.context});
+                  Ext.getCmp('tabledataview').setHtml(tplHtml);
+
+              },
+              failure:function(response,opts){
+                  console.log("Error");
+              }
+          })
+      }
+    },
     follow:function(){
         console.log(this);
     }
@@ -56465,7 +56494,25 @@ Ext.define("InnovationFinDashBoard.view.TreeView", {
         items: [
             {
                 xtype: 'panel',
-                id: 'paneltreeview'
+                id: 'paneltreeview',
+                docked:'left'
+            },{
+                width:50,
+                xtype:'panel',
+                layout:{
+                    type:'fit'
+                },
+                docked:'right',
+                items:[{
+                    xtype:'button',
+                    id:'flipbutton',
+//                    ui:'normal',
+                    disabled:true,
+                    style:{"text-indent": "300px"},
+                    disabledCls:'rightflipdisable',
+//                    cls:'rightflipenable'
+                    action: 'forwardToTab'
+                }]
             }]
 
     }
@@ -56487,12 +56534,22 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
             align:'stretch'
         },
 
+//        scrollable:'both',
+//        style:{"border":"1px solid red"},
+        height:'100%',
         items:[{
 //            flex:1,
             xtype:'panel',
             items:[{
+                xtype : 'toolbar',
+                id:'toolbartop',
+                docked : 'top',
+                height : 30
+            },{
                 xtype : 'panel',
                 id: 'dimensionbar',
+//                scrollable:'both',
+//                draggable:true,
 //                scrollable : {
 //                    direction : 'horizontal'
 ////                    slotSnapSize : {
@@ -56500,7 +56557,6 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
 ////                        y : 5
 ////                    }
 //                },
-
                 height:'100%',
                 layout:{
                     type:'hbox',
@@ -56522,11 +56578,6 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
                 },{
                     xtype:'dimensionitem5',id:'dimensionitem5',hidden:true
                 }]
-            },{
-                xtype : 'toolbar',
-                id:'toolbartop',
-                docked : 'top',
-                height : 30
             },{
                 xtype : 'toolbar',
                 docked : 'bottom',
@@ -56630,7 +56681,6 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
         },{
 //            flex:3,
             xtype:'panel',
-            height:480,
             layout:{
                 type:'hbox',
                 align:'stretch',
@@ -56638,16 +56688,20 @@ Ext.define('InnovationFinDashBoard.view.ChartView', {
             },
             items:[{
                 flex:1,
+//                height:'100%',
                 id:'leftmap',
+                scrollable:'both',
                 xtype:'panel'
             },{
                 flex:1,
+//                height:'100%',
                 id:'rightchart',
-                hidden:true,
+                cls:'rightchart',
+                showed:false,
+//                hidden:true,
                 xtype:'panel'
             }]
-        }
-        ]
+        }]
     }
 })
 
@@ -56694,7 +56748,7 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem1", {
             {
                 xtype: 'panel',
                 id:'context',
-                html:"Country",
+                html:"Area",
                 layout:{type:'vbox',align:'center',pack:'center'},
                 style:{"text-align":"center","padding-top":"5%"},
                 items:[{
@@ -56704,9 +56758,20 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem1", {
                     mode:'img',
                     src:'resources/icons/dimension/Area.png',
                     layout:'fit',
+                    taped:false,
                     listeners:{
                         tap:function(){
-                            Ext.getCmp('leftmap').add({xtype:'mapPanel'});
+                            if(this.taped==false){
+                                 Ext.getCmp('leftmap').add({xtype:'mapPanel'});
+                                 Ext.getCmp('rightchart').add({xtype:'chartpanel',height:525});
+                                 this.taped=true;
+                            }else{
+                                Ext.getCmp('leftmap').removeAll();
+                                Ext.getCmp('leftmap').add({xtype:'mapPanel'});
+                                Ext.getCmp('rightchart').removeAll();
+                                Ext.getCmp('rightchart').add({xtype:'chartpanel',height:525});
+                                this.taped=true;
+                            }
                         }
                     }
                 }],
@@ -56774,7 +56839,7 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem2", {
             {
                 xtype: 'panel',
                 id:'context',
-                html:"Company",
+                html:"Profit Center",
                 layout:{type:'vbox',align:'center',pack:'center'},
                 style:{"text-align":"center","padding-top":"5%"},
                 items:[{
@@ -56996,7 +57061,7 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem5", {
             {
                 xtype: 'panel',
                 id:'context',
-                html:"Option",
+                html:"Cost Center",
                 layout:{type:'vbox',align:'center',pack:'center'},
                 style:{"text-align":"center","padding-top":"5%"},
                 items:[{
@@ -57044,7 +57109,8 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
             xtype: "map",
             id: 'map',
             width: '100%',
-            height: 480,
+//            height:'100%',
+            height: 525,
             style: {
                 "text-align": "center",
                 "color": "black"
@@ -57052,7 +57118,7 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
             //                    useCurrentLocation:true
             mapOptions: {
                 center: new google.maps.LatLng(30.66, 104.06),
-                zoom: 5
+                zoom: 3
                 //                        navigationControlOptions: {
                 //                            style: google.maps.NavigationControlStyle.DEFAULT
                 //                        }
@@ -57060,12 +57126,87 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
             listeners: {
                 maprender: function(comp, map) {
 
-                    var infowindowsh = new google.maps.InfoWindow({
-                        content: '上海(4 Company)'
+                    var infoBubble1 = new InfoBubble({
+                        map: map,
+                        content: '<div class="phoneytext">Shanghai</div>',
+                        position: new google.maps.LatLng(31.23, 121.47),
+                        maxWidth:150,
+                        maxHeight:50,
+                        shadowStyle: 1,
+                        padding: 0,
+                        backgroundColor: 'rgb(57,57,57)',
+                        borderRadius: 4,
+                        arrowSize: 10,
+                        borderWidth: 1,
+                        borderColor: '#2c2c2c',
+                        disableAutoPan: true,
+                        hideCloseButton: true,
+                        arrowPosition: 30,
+                        backgroundClassName: 'phoney',
+                        arrowStyle: 2
                     });
-                    var infowindowbj = new google.maps.InfoWindow({
-                        content: '北京(4 Company)'
+
+                    var infoBubble2 = new InfoBubble({
+                        map: map,
+                        content: '<div class="phoneytext">Beijing</div>',
+                        position: new google.maps.LatLng(39.90, 116.40),
+                        maxWidth:150,
+                        maxHeight:50,
+                        shadowStyle: 1,
+                        padding: 0,
+                        backgroundColor: 'rgb(57,57,57)',
+                        borderRadius: 4,
+                        arrowSize: 10,
+                        borderWidth: 1,
+                        borderColor: '#2c2c2c',
+                        disableAutoPan: true,
+                        hideCloseButton: true,
+                        arrowPosition: 30,
+                        backgroundClassName: 'phoney',
+                        arrowStyle: 2
                     });
+
+
+                    var infoBubble3 = new InfoBubble({
+                        map: map,
+                        content: '<div class="phoneytext">Chengdu</div>',
+                        position: new google.maps.LatLng(30.67, 104.06),
+                        maxWidth:150,
+                        maxHeight:50,
+                        shadowStyle: 1,
+                        padding: 0,
+                        backgroundColor: 'rgb(57,57,57)',
+                        borderRadius: 4,
+                        arrowSize: 10,
+                        borderWidth: 1,
+                        borderColor: '#2c2c2c',
+                        disableAutoPan: true,
+                        hideCloseButton: true,
+                        arrowPosition: 30,
+                        backgroundClassName: 'phoney',
+                        arrowStyle: 2
+                    });
+
+                    var infoBubble4 = new InfoBubble({
+                        map: map,
+                        content: '<div class="phoneytext">Nanjing</div>',
+                        position: new google.maps.LatLng(32.04, 118.78),
+                        maxWidth:150,
+                        maxHeight:50,
+                        shadowStyle: 1,
+                        padding: 0,
+                        backgroundColor: 'rgb(57,57,57)',
+                        borderRadius: 4,
+                        arrowSize: 10,
+                        borderWidth: 1,
+                        borderColor: '#2c2c2c',
+                        disableAutoPan: true,
+                        hideCloseButton: true,
+                        arrowPosition: 30,
+                        backgroundClassName: 'phoney',
+                        arrowStyle: 2
+                    });
+
 
                     //latlng
                     var latlngSh = new google.maps.LatLng(
@@ -57084,6 +57225,23 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                         //            coords.longitude
                     );
 
+                    var latlngCd = new google.maps.LatLng(
+                        //            纬度
+                        //            coords.latitude,
+                        30.67, 104.06
+                        //            经度
+                        //            coords.longitude
+                    );
+
+                    var latlngNj = new google.maps.LatLng(
+                        //            纬度
+                        //            coords.latitude,
+                        32.04, 118.78
+                        //            经度
+                        //            coords.longitude
+                    );
+
+
                     var marker1 = new google.maps.Marker({
                         position: latlngSh,
                         title: 'Shanghai',
@@ -57092,6 +57250,16 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                     var marker2 = new google.maps.Marker({
                         position: latlngBj,
                         title: 'Beijing',
+                        map: map
+                    });
+                    var marker3 = new google.maps.Marker({
+                        position: latlngCd,
+                        title: 'Chengdu',
+                        map: map
+                    });
+                    var marker4 = new google.maps.Marker({
+                        position: latlngNj,
+                        title: 'Nanjing',
                         map: map
                     });
 
@@ -57109,6 +57277,16 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                                 infowindowbj.open(map, marker);
                                 break;
                             }
+                            case "Chengdu":
+                            {
+                                infowindowcd.open(map, marker);
+                                break;
+                            }
+                            case "Nanjing":
+                            {
+                                infowindownj.open(map, marker);
+                                break;
+                            }
                             default:
                             {
                                 break;
@@ -57116,16 +57294,97 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                         }
 
                     };
+
                     google.maps.event.addListener(marker1, 'click',
                         function(event) {
-                            renderChart(marker1);
-                            Ext.getCmp('rightchart').add({xtype:'chartpanel',height:480});
-                            Ext.getCmp('rightchart').show();
+//                            renderChart(marker1);
+                            infoBubble1.open(map,marker1);
+                            var store=Ext.getStore('ChartStore');
+                            store.setProxy({
+                                type:'ajax',
+                                url:'resources/json/chart/chartstoresh.json',
+                                reader:{
+                                    type:'json',
+                                    rootProperty: 'items'
+                                }
+                            });
+                            store.load();
+                            Ext.getCmp('columnchart').setStore(store);
+                            Ext.getCmp('columnchart').getAxes().get('bottom').setTitle("Company");
+                            Ext.getCmp('columnchart').redraw();
+                            Ext.getCmp('piechart').setStore(store);
+                            Ext.getCmp('piechart').redraw();
+
+//                            store.data.items[0].data.Q1=18782;
+//                            Ext.chart.getChart()
+//                            if(Ext.getCmp('rightchart').showed==false){
+//                                Ext.getCmp('rightchart').add({xtype:'chartpanel',height:525});
+//                                Ext.getCmp('rightchart').show();
+//                                Ext.getCmp('rightchart').showed=true;
+//                            }
                         });
                     google.maps.event.addListener(marker2, 'click',
                         function(event) {
-                            renderChart(marker2)
+                            infoBubble2.open(map,marker2);
+                            var store=Ext.getStore('ChartStore');
+                            store.setProxy({
+                                type:'ajax',
+                                url:'resources/json/chart/chartstorebj.json',
+                                reader:{
+                                    type:'json',
+                                    rootProperty: 'items'
+                                }
+                            });
+                            store.load();
+
+                            Ext.getCmp('columnchart').setStore(store);
+                            Ext.getCmp('columnchart').getAxes().get('bottom').setTitle("Company");
+                            Ext.getCmp('columnchart').redraw();
+                            Ext.getCmp('piechart').setStore(store);
+                            Ext.getCmp('piechart').redraw();
                         });
+                    google.maps.event.addListener(marker3, 'click',
+                        function(event) {
+                            infoBubble3.open(map,marker3);
+                            var store=Ext.getStore('ChartStore');
+                            store.setProxy({
+                                type:'ajax',
+                                url:'resources/json/chart/chartstorecd.json',
+                                reader:{
+                                    type:'json',
+                                    rootProperty: 'items'
+                                }
+                            });
+                            store.load();
+                            Ext.getCmp('columnchart').setStore(store);
+                            Ext.getCmp('columnchart').getAxes().get('bottom').setTitle("Company");
+                            Ext.getCmp('columnchart').redraw();
+                            Ext.getCmp('piechart').setStore(store);
+                            Ext.getCmp('piechart').redraw();
+                        });
+                    google.maps.event.addListener(marker4, 'click',
+                        function(event) {
+                            infoBubble4.open(map,marker4);
+                            var store=Ext.getStore('ChartStore');
+                            store.setProxy({
+                                type:'ajax',
+                                url:'resources/json/chart/chartstorenj.json',
+                                reader:{
+                                    type:'json',
+                                    rootProperty: 'items'
+                                }
+                            });
+                            store.load();
+                            Ext.getCmp('columnchart').setStore(store);
+                            Ext.getCmp('columnchart').getAxes().get('bottom').setTitle("Company");
+                            Ext.getCmp('columnchart').redraw();
+                            Ext.getCmp('piechart').setStore(store);
+                            Ext.getCmp('piechart').redraw();
+                        });
+//                    google.maps.event.addListener(marker2, 'click',
+//                        function(event) {
+//                            renderChart(marker2)
+//                        });
                 }
             }
         }]
@@ -57145,6 +57404,8 @@ Ext.define('InnovationFinDashBoard.view.ColumnChart', {
         title: 'Column',
         iconCls: 'column',
         cls: 'chartpanel',
+        id:'columnchart',
+        autoDestory:true,
 //        interactions: ['reset', {
 //            type: 'panzoom'
 //        }, {
@@ -57177,19 +57438,19 @@ Ext.define('InnovationFinDashBoard.view.ColumnChart', {
                     fill:'yellow'
                 },
                 adjustMinimumByMajorUnit: 0,
-                fields: ['CompanyA', 'CompanyB', 'CompanyC', 'CompanyD'],
+                fields: ['Q1', 'Q2', 'Q3', 'Q4'],
                 title: 'Volume'
 
             },
             {
                 type: 'Category',
                 position: 'bottom',
-                fields: ['Qua'],
+                fields: ['Company'],
                 label:{
                     font: '15px Arial',
                     fill:'yellow'
                 },
-                title: 'Quarter'
+                title: 'Area'
             }
         ],
         legend: {
@@ -57198,11 +57459,11 @@ Ext.define('InnovationFinDashBoard.view.ColumnChart', {
         series: [
             {
                 type: 'column',
-                xField: 'Qua',
-                yField: ['CompanyA', 'CompanyB', 'CompanyC', 'CompanyD'],
+                xField: 'Company',
+                yField: ['Q1', 'Q2', 'Q3', 'Q3'],
                 axis: 'left',
                 highlight: true,
-                title: ['SAP_SH', 'SAP_BJ', 'SAP_CD', 'SAP_NJ'],
+                title: ['Q1', 'Q2', 'Q3', 'Q4'],
                 showInLegend: true
             }
         ]
@@ -57222,6 +57483,7 @@ Ext.define('InnovationFinDashBoard.view.PieChart', {
     extend: 'Ext.chart.Chart',
     config: {
         title: 'Pie',
+        id:'piechart',
         iconCls: 'pie',
         cls: 'chartpanel',
         animate: true,
@@ -57238,7 +57500,7 @@ Ext.define('InnovationFinDashBoard.view.PieChart', {
         ],
         series: [{
             type: 'pie',
-            field:'CompanyA',
+            field:'Q1',
             animate: true,
             interactions: ['rotate', 'reset'],
             highlight: true,
@@ -57250,7 +57512,7 @@ Ext.define('InnovationFinDashBoard.view.PieChart', {
 //                }
 //            },
             label: {
-                field: 'Qua',   //bind label text to name
+                field: 'Company',   //bind label text to name
                 display: 'rotate', //rotate labels (also middle, out).
                 font: '14px "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif',
 //                contrast: true
@@ -57271,6 +57533,47 @@ Ext.define('InnovationFinDashBoard.view.PieChart', {
     }
 
 })
+/**
+ * Created with JetBrains WebStorm.
+ * User: I068959
+ * Date: 10/17/12
+ * Time: 6:20 PM
+ * To change this template use File | Settings | File Templates.
+ */
+Ext.define("InnovationFinDashBoard.view.TabView",{
+    extend: 'Ext.Panel',
+
+    config:{
+        id:'TabView',
+        fullscreen:true,
+        layout: {
+            type: 'hbox',
+            align:"stretch",
+            pack:"justify"
+        },
+        items:[{
+            xtype: 'tabViewShow',
+//                flex:5,
+            id: 'tabPanel',
+            width:'100%',
+            height:'100%'
+        },{
+            xtype:'panel',
+            docked:'left',
+            width:50,
+            layout:{
+              type:'fit'
+            },
+            items:[{
+                xtype:'button',
+                id:'flipbuttonbackToTree',
+                ui:'normal',
+                cls:'leftflip',
+                action: 'forwardToTree'
+                }]
+            }]
+    }
+});
 /**
  * Created with JetBrains WebStorm.
  * User: Hsuching
@@ -57702,15 +58005,19 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
         id: 'Navicontroller',
         refs: {
             naviview:'#myPanel',
-            ForwardToTab:'button[action=forwardToTab]'
-
+            ForwardToTab:'button[action=forwardToTab]',
+            ForwardToTree:'button[action=forwardToTree]'
         },
         control: {
             naviview:{
-                push:'pushviewnavi'
+                push:'pushviewnavi',
+                pop:'popviewnavi'
             },
             ForwardToTab:{
                 tap:'forwardToTab'
+            },
+            ForwardToTree:{
+                tap:'forwardToTree'
             }
 
         }
@@ -57719,23 +58026,26 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
     pushviewnavi:function(navi,obj,eOpts){
         if(obj.id=="treeview"){
             this.pushtreeview(navi,obj,eOpts);
-        }else if(obj.id=="myPanel"){
-            Ext.getCmp('forwardBtn').hide();
-        }else if(obj.id='tabPanel'){
-            Ext.getCmp('forwardBtn').hide();
+            Ext.getCmp('settingpanel').show();
+        }
+    },
+    popviewnavi:function(navi,obj,eOpts){
+        if(obj.id=="treeview"){
+            Ext.getCmp('settingpanel').hide();
         }
     },
 
     pushtreeview: function(navi,treeobj,eOpts) {
 
-        console.log(treeobj.appName);
+//        Ext.getCmp('forwardBtn').show();
+//        Ext.getCmp('forwardBtn').disable();
         var margin = {
-                top: 20,
-                right: 120,
+                top: 40,
+                right: 100,
                 bottom: 20,
                 left: 120
             },
-            width = 1000 - margin.right - margin.left,
+            width = 900 - margin.right - margin.left,
             height = 650 - margin.top - margin.bottom,
             i = 0,
             duration = 500,
@@ -57748,11 +58058,26 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
         });
 
         var vis = d3.select("#paneltreeview").append("svg").attr("width", width + margin.right + margin.left).attr("height", height + margin.top + margin.bottom).append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+        var defstemp=vis.append("defs").append("linearGradient").attr("id","grad1").attr("x1","0%").attr("y1","0%").attr("x2","0%").attr("y2","100%");
+        defstemp.append("stop").attr("offset","0%").style("stop-color","rgb(255,255,255)").style("stop-opacity","1");
+        defstemp.append("stop").attr("offset","90%").style("stop-color","rgb(144,144,144)").style("stop-opacity","1");
+        defstemp.append("stop").attr("offset","100%").style("stop-color","rgb(50,50,50)").style("stop-opacity","0.5");
+
+        var defstempbottom=vis.append("defs").append("linearGradient").attr("id","grad2").attr("x1","0%").attr("y1","0%").attr("x2","0%").attr("y2","100%");
+        defstempbottom.append("stop").attr("offset","0%").style("stop-color","rgb(20,20,20)").style("stop-opacity","1");
+        defstempbottom.append("stop").attr("offset","90%").style("stop-color","rgb(0,0,0)").style("stop-opacity","1");
+        defstempbottom.append("stop").attr("offset","100%").style("stop-color","rgb(50,50,50)").style("stop-opacity","1");
+
+        var defstempbottomred=vis.append("defs").append("linearGradient").attr("id","grad3").attr("x1","0%").attr("y1","0%").attr("x2","0%").attr("y2","100%");
+        defstempbottomred.append("stop").attr("offset","0%").style("stop-color","rgb(208,14,14)").style("stop-opacity","1");
+        defstempbottomred.append("stop").attr("offset","90%").style("stop-color","rgb(176,0,0)").style("stop-opacity","1");
+        defstempbottomred.append("stop").attr("offset","100%").style("stop-color","rgb(117,0,0)").style("stop-opacity","1");
+
 
 
 
         d3.json("http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=tree",
-//        d3.json("resources/json/tree/flare.json",
+//        d3.json("resources/json/tree/tree.json",
             function(json) {
                 //    d3.json(jsonresponse, function(json) {
                 root = json;
@@ -57793,46 +58118,119 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
 //                    return "translate(" + source.y0 + "," + source.x0 + ")";
 //                }).on("mouseover",mouseover).on("click",click).on("mouseout",blur);
 
-              var nodeEnter = node.enter().append("g").attr("class", "node").attr("transform",
+              var nodeEnter = node.enter().append("g").attr("class", "node").attr("title",function(d){
+                  var value;
+                  if(d.value<0)
+                      value= d.value*(-1);
+                  else
+                      value= d.value;
+                  return "<div>Actual Value: "+ value+";</div> <div style='height: 10px;'></div> <div>Target Value: Null</div>";}).attr("transform",
                 function(d) {
                     return "translate(" + source.y0 + "," + source.x0 + ")";
                 }).on("mouseover",mouseover).on("mouseout",mouseout);
 
 
+            nodeEnter.append("rect").attr("x",-80).attr("class", "tip")
+                .attr("y",-25).attr("width",90).attr("height",50).attr("rx",5).attr("ry",5).style("fill","url(#grad1)").style("stroke","grey");
 
-//            node.on("mouseover", click2);
+            $(function(){
+                $(".node").tipTip({maxWidth: "400px",defaultPosition:"top"});
+            });
 
-
-            nodeEnter.append("circle").attr("r", 1e-6).style("fill",
+            var nodetext=nodeEnter.append("text").attr("x","-40").attr("y", function(d){
+                    if(d.name=="+"||d.name=="-"||d.name=="*"||d.name=="/"){
+                        return "20"
+                    } else{
+                        return "5";
+                    }}).attr("text-anchor",
                 function(d) {
-                    return d._children ? "#470759": "magenta";
+                    return d.children || d._children ? "middle": "middle";
+                }).text(function(d) {
+                    if(d.name.indexOf(" ")!=-1){
+//                        var texttemp=d.name.split(" ");
+//                        var cc;
+//                        var svgNS = "http://www.w3.org/2000/svg";
+//                        var tspan_element = document.createElementNS(svgNS, "tspan");
+//                        var text_node=document.createTextNode("Helloooooooo");
+//                        tspan_element.setAttributeNS(null,"x",-40);
+//                        tspan_element.setAttributeNS(null,"y",5);
+//                        tspan_element.appendChild(text_node);
+//                        this.appendChild(tspan_element);
+////                        for(cc in texttemp){
+////                            this.append("svg:tspan").text(cc);
+////                        }
+                    }else{
+                        return d.name;
+                    }
+                }).style("fill-opacity", 1e-6).style("fill","black").style("font-size",function(d){
+                    if(d.name=="+"||d.name=="-"||d.name=="*"||d.name=="/"){
+                        return "25"
+                    }else{
+                        return "15"
+                    }
                 });
-            //                nodeEnter.append("svg:rect")
-            //                    .attr("class","box").attr("x",-100).attr("y",-10).attr("width",100).attr("height",50)
-            //                    .style("fill", function(d) { return d._children ? "#470759" : "magenta"; });
-            nodeEnter.append("text").attr("x",
+
+
+            nodetext.append("tspan").text(function(d){
+                if(d.name.indexOf(" ")!=-1){
+                    var texttemp=d.name.split(" ");
+                    var cc;
+                    var i;
+                    var svgNS = "http://www.w3.org/2000/svg";
+                    var tspan_element;
+                    var text_node;
+                    for(i=0;i<texttemp.length;i++){
+                        cc=texttemp[i];
+                        tspan_element = document.createElementNS(svgNS, "tspan");
+//                        tspan_element.setAttributeNS(null,"dx",0-i*50);
+                        if(i>0){
+                            tspan_element.setAttributeNS(null,"x",-35);
+                        }
+                        tspan_element.setAttributeNS(null,"y",i*15+(-10));
+                        text_node=document.createTextNode(cc);
+                        tspan_element.appendChild(text_node);
+                        this.parentElement.appendChild(tspan_element);
+                    }
+                    return null;
+                }else{
+                    return null;
+                }
+
+            });
+
+
+            nodeEnter.append("rect").attr("x",-80).attr("y",28).attr("width",90).attr("height",20).attr("rx",2).attr("ry",2)
+                .style("fill",function(d){
+                    if(d.name=="Return On Investment"){
+                        return "url(#grad3)"
+                    }else{
+                        return "url(#grad2)"
+                    }
+                }).style("fill-opacity", 0.8).style("stroke",function(d){
+                    if(d.name=="Return On Investment"){
+                        return "#9E0000"
+                    }else{
+                        return "#3F3F3F"
+                    }
+                });
+
+            nodeEnter.append("text").attr("x","-40").attr("y", "40").attr("text-anchor",
                 function(d) {
-                    return d.children || d._children ? -20 : 20;
-                }).attr("dy", ".35em").attr("text-anchor",
-                function(d) {
-                    return d.children || d._children ? "end": "start";
+                    return d.children || d._children ? "middle": "middle";
                 }).text(function(d) {
-                    return d.name;
-                }).style("fill-opacity", 1e-6).style("fill","yellow");
+                    if(d.name=="+"||d.name=="-"||d.name=="*"||d.name=="/"){
+                        var temp=this.parentElement.getElementsByTagName("rect");
+                        while(temp.length!=0){
+                            this.parentElement.removeChild(temp[0]);
+                        }
+                    }
+                    if(d.value>=0)
+                        return d.value;
+                    else if(d.value<0)
+                        return d.value*(-1);
+                    else return "";
+                }).style("fill-opacity", 1).style("fill","white").style("font-size","10");
 
-            nodeEnter.append("text").attr("x",
-                function(d) {
-                    return d.children || d._children ? -20 : 20;
-                }).attr("dy", "1.39em").attr("text-anchor",
-                function(d) {
-                    return d.children || d._children ? "end": "start";
-                }).text(function(d) {
-                    {if(d.value>=0) return d.value;else if(d.value<0) return d.value*(-1);else return "";}
-                }).style("fill-opacity", 0.5).style("fill","red");
-
-
-
-            console.log(nodeEnter);
 
             // Transition nodes to their new position.
             var nodeUpdate = node.transition().duration(duration).attr("transform",
@@ -57897,6 +58295,17 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
                 d.x0 = d.x;
                 d.y0 = d.y;
             });
+
+            link[0][1].setAttribute('opacity', '0');
+            link[0][3].setAttribute('opacity', '0');
+            link[0][6].setAttribute('opacity', '0');
+            link[0][9].setAttribute('opacity', '0');
+            link[0][11].setAttribute('opacity', '0');
+            link[0][13].setAttribute('opacity', '0');
+            link[0][16].setAttribute('opacity', '0');
+            link[0][19].setAttribute('opacity', '0');
+            link[0][22].setAttribute('opacity', '0');
+            temp=null;
         }
         // Toggle children on click.
 //        function click(d) {
@@ -57916,32 +58325,71 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
 //        }
 
         function mouseover(d){
-            this.lastChild.style.fillOpacity=1;
+            if(temp!=null){
+                temp.childNodes[0].style.stroke="#808080";
+            }
+            temp=this;
             var operationmark=d.name;
             if(operationmark=="+"||operationmark=="-"||operationmark=="*"||operationmark=="/"){
-                Ext.getCmp('forwardBtn').hide();
+//                Ext.getCmp('forwardBtn').hide();
             }else{
-                Ext.getCmp('forwardBtn').setText(d.name);
-                Ext.getCmp('forwardBtn').show();
+                if(d.name=="Return On Investment"){
+                    this.parentElement.getElementsByTagName("path")[0].setAttribute('class','link red');
+                    this.parentElement.getElementsByTagName("path")[5].setAttribute('class','link red');
+                    this.parentElement.getElementsByTagName("path")[23].setAttribute('class','link red');
+                    var i;
+                    var nodeobj;
+                    var nodetemp=this.parentElement.getElementsByClassName("node");
+                    for(i=0;i<nodetemp.length;i++){
+                        nodeobj=nodetemp[i];
+                        if(nodeobj.getElementsByTagName("text")[0].textContent=="ProfitMargin"||nodeobj.getElementsByTagName("text")[0].textContent=="EarningsBeforeInterestandTax"||nodeobj.getElementsByTagName("text")[0].textContent=="OperatingIncome"){
+                            nodeobj.getElementsByTagName("rect")[1].style.fill="red";
+                            nodeobj.getElementsByTagName("rect")[1].style.stroke="#9e0000";
+                        }
+                    }
+                }
+                this.childNodes[0].style.stroke="yellow";
+                if(d.name!="Return On Investment"){
+                    Ext.getCmp('flipbutton').enable();
+                    Ext.getCmp('flipbutton').addCls('rightflipenable');
+                    Ext.getCmp('flipbutton').setText(d.name);
+                }else{
+                    Ext.getCmp('flipbutton').disable();
+                    Ext.getCmp('flipbutton').removeCls('rightflipenable');
+
+                }
             }
         }
 
         function mouseout(d){
-            this.lastChild.style.fillOpacity=0.5;
+//            this.childNodes[0].style.stroke="#808080";
+//            Ext.getCmp('flipbutton').disable();
+//            this.lastChild.style.fillOpacity=0.5;
         }
 
     },
 
     naviTo:function(selectcontent) {
-        var tabview = new InnovationFinDashBoard.view.TabViewShow({
+//        var tabview = new InnovationFinDashBoard.view.TabViewShow({
+//            dupontComponent: selectcontent,
+//            title:selectcontent
+//        });
+        var tabview = new InnovationFinDashBoard.view.TabView({
             dupontComponent: selectcontent,
             title:selectcontent
         });
         Ext.getCmp('myPanel').push(tabview);
+        temp.childNodes[0].style.stroke="#808080";
+        Ext.getCmp('navi').items.items[0].hide();
     },
 
     forwardToTab:function(btn){
         this.naviTo(btn.getText());
+    },
+    forwardToTree:function(btn){
+        Ext.getCmp('myPanel').pop();
+        Ext.getCmp('navi').items.items[0].show();
+
     }
 
 })
@@ -59816,25 +60264,48 @@ Ext.define("InnovationFinDashBoard.view.Main", {
             ui: 'dark',
             docked: 'top',
             cls: 'navibar',
-            height: 80,
+//            height: 20,
+            id:'navi',
             items:[{
-                xtype: 'button',
-                ui: 'confirm-forward',
-                id:'forwardBtn',
+                xtype:'panel',
+                id:'settingpanel',
                 hidden:true,
-                text:'forward',
-                align: 'right',
-                action: 'forwardToTab'
+                width:80,
+                align:'right',
+                layout:{
+                    type:'hbox',
+                    align: 'stretch',
+                    pack: 'justify'
+                },
+                items:[{
+                    xtype:'button',
+                    cls:'settingCls'
+                },{
+                    xtype:'button',
+                    cls:'addCls'
+                }]
             }]
+//            items:[{
+//                xtype: 'button',
+//                ui: 'confirm-forward',
+//                id:'forwardBtn',
+////                disabled:true,
+//                hidden:true,
+//                text:'forward',
+//                align: 'right',
+//                action: 'forwardToTab'
+//            }]
         },
         items: [{
-            title: '<div class="hometop"></div>',
+            title: '<div style="font-size: 20px;font-family: helvetica">InnovationFinDashBoard</div>',
             layout: {
                 type: 'vbox',
                 align: 'stretch',
                 pack: 'justify',
                 fullscreen: true
             },
+            scrollable:'both',
+            style:{"z-index":"1"},
             items: [{
                 id: 'homepanel1',
                 xtype: 'panel',
@@ -59846,30 +60317,17 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     fullscreen: true
                 },
                 defaults: {
-                    width: 150,
-                    height: 100,
+                    width: 300,
+                    height: 200,
                     mode: 'img',
                     cls: 'imgborder',
                     listeners: {
                         tap: function(img, ev) {
-                            //                            Ext.Msg.alert(img.id);
-                            //                            var tabview=new InnovationFinDashBoard.view.TabViewShow();
-                            //                            Ext.getCmp('myPanel').push(
-                            ////                                title:'Second',
-                            ////                                html:'Second view!'
-                            //                                tabview
-                            ////                                {
-                            ////                                    xtype:'tabViewShow',
-                            ////                                    id:'tabPanel'
-                            ////                                }
-                            //                            )
-//                            Ext.Msg.alert(img.id);
-
-                            var treeview = new InnovationFinDashBoard.view.TreeView({
-                                "appName": img.id
-                            });
-                            Ext.getCmp('myPanel').push(
-                                treeview)
+                            Ext.getCmp('myPanel').push({
+                                title: 'Second',
+                                html: 'Second view!',
+                                scrollable:'both'
+                            })
                         }
                     }
                 },
@@ -59877,21 +60335,21 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                     xtype: 'image',
                     id: 'dupont',
                     html: 'Dupont',
-                    src: 'resources/images/dupont.jpg'
+                    src: 'resources/images/Picture1.png'
                 },
                     {
-                        width: 150
+                        width: 20
                     },
                     {
                         xtype: 'image',
-                        src: 'resources/images/Data_analysis.jpg'
+                        src: 'resources/images/Picture2.png'
                     },
                     {
-                        width: 150
+                        width: 20
                     },
                     {
                         xtype: 'image',
-                        src: 'resources/images/IDEA.jpg'
+                        src: 'resources/images/Picture3.png'
                     }]
             },
                 {
@@ -59905,39 +60363,41 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                         fullscreen: true
                     },
                     defaults: {
-                        width: 150,
-                        height: 100,
+                        width: 300,
+                        height: 200,
                         mode: 'img',
                         listeners: {
                             tap: function(img, ev) {
-                                Ext.Msg.alert(img.id);
-                                Ext.getCmp('myPanel').push({
-                                    title: 'Second',
-                                    html: 'Second view!'
-                                })
+                                var treeview = new InnovationFinDashBoard.view.TreeView({
+//                                    "appName": img.id,
+                                    "title":img.emb
 
+                                });
+                                Ext.getCmp('myPanel').push(
+                                    treeview)
                             }
                         }
                     },
                     items: [{
                         xtype: 'image',
-                        src: 'resources/images/FICOADD01.png',
+                        src: 'resources/images/Picture4.png',
                         flex: 1
                     },
                         {
-                            width: 150
+                            width: 20
                         },
                         {
                             xtype: 'image',
-                            src: 'resources/images/FICOADD02.jpg',
+                            emb:'Dupont Analysis',
+                            src: 'resources/images/PictureDupont.png',
                             flex: 1
                         },
                         {
-                            width: 150
+                            width: 20
                         },
                         {
                             xtype: 'image',
-                            src: 'resources/images/FICOADD03.jpg',
+                            src: 'resources/images/Picture5.png',
                             flex: 1
                         }]
                 },
@@ -59952,39 +60412,38 @@ Ext.define("InnovationFinDashBoard.view.Main", {
                         fullscreen: true
                     },
                     defaults: {
-                        width: 150,
-                        height: 100,
+                        width: 300,
+                        height: 200,
                         mode: 'img',
                         listeners: {
                             tap: function(img, ev) {
-                                Ext.Msg.alert(img.id);
+
                                 Ext.getCmp('myPanel').push({
                                     title: 'Second',
                                     html: 'Second view!'
                                 })
-
                             }
                         }
                     },
                     items: [{
                         xtype: 'image',
-                        src: 'resources/images/FICOADD04.jpg',
+                        src: 'resources/images/Picture6.png',
                         flex: 1
                     },
                         {
-                            width: 150
+                            width: 20
                         },
                         {
                             xtype: 'image',
-                            src: 'resources/images/FICOADD05.gif',
+                            src: 'resources/images/Picture7.png',
                             flex: 1
                         },
                         {
-                            width: 150
+                            width: 20
                         },
                         {
                             xtype: 'image',
-                            src: 'resources/images/FICOADD06.jpg',
+                            src: 'resources/images/Picture8.png',
                             flex: 1
                         }]
                 }]
@@ -60489,16 +60948,15 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
         id:'tabPanel',
         ui:'dark',
         tabBarPosition:'bottom',
-//        autoDestory:true,
-
         fullscreen:true,
-//            activeItem:1,
+//        activeItem:1,
         layout:{animation:{type:'flip',direction:'right',duration:1000}},
         items:[
             {
                 title:'Table View',
                 xtype:'tableview',
-                iconCls:'info'
+                iconCls:'info',
+                scrollable:'both'
             },
             {
                 title:'Chart View',
@@ -60507,7 +60965,6 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
             }],
         listeners:{
             activeitemchange:function(item,newValue,oldValue){
-//                Ext.Msg.alert("切换");
                 console.log(oldValue);
                 console.log(newValue);
                 newValue.addCls('colorRed');
@@ -60518,8 +60975,8 @@ Ext.define("InnovationFinDashBoard.view.TabViewShow",{
 //                    var it=item.getItems();
 //                    item.getItems().items[0].addCls('colorRed');
                 console.log(item.getActiveItem().title);
-                item.getActiveItem().context=this.dupontComponent;
-                console.log(this.dupontComponent);
+                item.getActiveItem().context=this.parent.dupontComponent;
+                console.log(this.parent.dupontComponent);
                 return true;
 
             }
@@ -60539,7 +60996,9 @@ Ext.define('InnovationFinDashBoard.view.ChartPanel', {
     xtype : 'chartpanel',
 
     config:{
+        cls:'chartpanel',
         layout:'card',
+//        height:'100%',
         tabBar:{
             docked:'top',
             layout:{

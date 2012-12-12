@@ -12,1032 +12,1032 @@
                 {
                     "clsName": "Ext.mixin.Mixin",
                     "name": "Mixin.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/mixin/"
+                    "path": "sdk/src/mixin/"
                 },
                 {
                     "clsName": "Ext.mixin.Traversable",
                     "name": "Traversable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/mixin/"
+                    "path": "sdk/src/mixin/"
                 },
                 {
                     "clsName": "Ext.ComponentManager",
                     "name": "ComponentManager.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.mixin.Selectable",
                     "name": "Selectable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/mixin/"
+                    "path": "sdk/src/mixin/"
                 },
                 {
                     "clsName": "Ext.event.ListenerStack",
                     "name": "ListenerStack.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/"
+                    "path": "sdk/src/event/"
                 },
                 {
                     "clsName": "Ext.event.Controller",
                     "name": "Controller.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/"
+                    "path": "sdk/src/event/"
                 },
                 {
                     "clsName": "Ext.event.publisher.Publisher",
                     "name": "Publisher.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/publisher/"
+                    "path": "sdk/src/event/publisher/"
                 },
                 {
                     "clsName": "Ext.util.Filter",
                     "name": "Filter.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.util.Sorter",
                     "name": "Sorter.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.behavior.Behavior",
                     "name": "Behavior.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/behavior/"
+                    "path": "sdk/src/behavior/"
                 },
                 {
                     "clsName": "Ext.event.Event",
                     "name": "Event.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/"
+                    "path": "sdk/src/event/"
                 },
                 {
                     "clsName": "Ext.XTemplateParser",
                     "name": "XTemplateParser.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.mixin.Sortable",
                     "name": "Sortable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/mixin/"
+                    "path": "sdk/src/mixin/"
                 },
                 {
                     "clsName": "Ext.mixin.Filterable",
                     "name": "Filterable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/mixin/"
+                    "path": "sdk/src/mixin/"
                 },
                 {
                     "clsName": "Ext.fx.easing.Abstract",
                     "name": "Abstract.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/easing/"
+                    "path": "sdk/src/fx/easing/"
                 },
                 {
                     "clsName": "Ext.fx.easing.Momentum",
                     "name": "Momentum.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/easing/"
+                    "path": "sdk/src/fx/easing/"
                 },
                 {
                     "clsName": "Ext.fx.easing.Bounce",
                     "name": "Bounce.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/easing/"
+                    "path": "sdk/src/fx/easing/"
                 },
                 {
                     "clsName": "Ext.fx.State",
                     "name": "State.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/"
+                    "path": "sdk/src/fx/"
                 },
                 {
                     "clsName": "Ext.event.Dispatcher",
                     "name": "Dispatcher.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/"
+                    "path": "sdk/src/event/"
                 },
                 {
                     "clsName": "Ext.mixin.Observable",
                     "name": "Observable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/mixin/"
+                    "path": "sdk/src/mixin/"
                 },
                 {
                     "clsName": "Ext.draw.Surface",
                     "name": "Surface.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/draw/"
+                    "path": "sdk/src/draw/"
                 },
                 {
                     "clsName": "Ext.util.AbstractMixedCollection",
                     "name": "AbstractMixedCollection.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.util.Sortable",
                     "name": "Sortable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.util.MixedCollection",
                     "name": "MixedCollection.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.ItemCollection",
                     "name": "ItemCollection.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.event.Dom",
                     "name": "Dom.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/"
+                    "path": "sdk/src/event/"
                 },
                 {
                     "clsName": "Ext.event.publisher.Dom",
                     "name": "Dom.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/publisher/"
+                    "path": "sdk/src/event/publisher/"
                 },
                 {
                     "clsName": "Ext.Evented",
                     "name": "Evented.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.AbstractComponent",
                     "name": "AbstractComponent.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.XTemplateCompiler",
                     "name": "XTemplateCompiler.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.util.Collection",
                     "name": "Collection.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.data.StoreManager",
                     "name": "StoreManager.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.DateExtras",
                     "name": "DateExtras.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.util.Format",
                     "name": "Format.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.Template",
                     "name": "Template.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.XTemplate",
                     "name": "XTemplate.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.util.SizeMonitor",
                     "name": "SizeMonitor.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.layout.Default",
                     "name": "Default.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/layout/"
+                    "path": "sdk/src/layout/"
                 },
                 {
                     "clsName": "Ext.layout.Fit",
                     "name": "Fit.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/layout/"
+                    "path": "sdk/src/layout/"
                 },
                 {
                     "clsName": "Ext.layout.AbstractBox",
                     "name": "AbstractBox.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/layout/"
+                    "path": "sdk/src/layout/"
                 },
                 {
                     "clsName": "Ext.layout.HBox",
                     "name": "HBox.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/layout/"
+                    "path": "sdk/src/layout/"
                 },
                 {
                     "clsName": "Ext.layout.VBox",
                     "name": "VBox.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/layout/"
+                    "path": "sdk/src/layout/"
                 },
                 {
                     "clsName": "Ext.fx.easing.BoundMomentum",
                     "name": "BoundMomentum.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/easing/"
+                    "path": "sdk/src/fx/easing/"
                 },
                 {
                     "clsName": "Ext.fx.easing.Linear",
                     "name": "Linear.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/easing/"
+                    "path": "sdk/src/fx/easing/"
                 },
                 {
                     "clsName": "Ext.util.translatable.Abstract",
                     "name": "Abstract.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/translatable/"
+                    "path": "sdk/src/util/translatable/"
                 },
                 {
                     "clsName": "Ext.util.translatable.CssTransform",
                     "name": "CssTransform.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/translatable/"
+                    "path": "sdk/src/util/translatable/"
                 },
                 {
                     "clsName": "Ext.util.translatable.ScrollPosition",
                     "name": "ScrollPosition.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/translatable/"
+                    "path": "sdk/src/util/translatable/"
                 },
                 {
                     "clsName": "Ext.util.Translatable",
                     "name": "Translatable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.behavior.Translatable",
                     "name": "Translatable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/behavior/"
+                    "path": "sdk/src/behavior/"
                 },
                 {
                     "clsName": "Ext.util.Draggable",
                     "name": "Draggable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.behavior.Draggable",
                     "name": "Draggable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/behavior/"
+                    "path": "sdk/src/behavior/"
                 },
                 {
                     "clsName": "Ext.Component",
                     "name": "Component.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.Mask",
                     "name": "Mask.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.LoadMask",
                     "name": "LoadMask.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.dataview.element.Container",
                     "name": "Container.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/dataview/element/"
+                    "path": "sdk/src/dataview/element/"
                 },
                 {
                     "clsName": "Ext.fx.easing.EaseOut",
                     "name": "EaseOut.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/easing/"
+                    "path": "sdk/src/fx/easing/"
                 },
                 {
                     "clsName": "Ext.scroll.Scroller",
                     "name": "Scroller.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/scroll/"
+                    "path": "sdk/src/scroll/"
                 },
                 {
                     "clsName": "Ext.fx.layout.card.Abstract",
                     "name": "Abstract.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/layout/card/"
+                    "path": "sdk/src/fx/layout/card/"
                 },
                 {
                     "clsName": "Ext.fx.layout.card.Scroll",
                     "name": "Scroll.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/layout/card/"
+                    "path": "sdk/src/fx/layout/card/"
                 },
                 {
                     "clsName": "Ext.scroll.indicator.Abstract",
                     "name": "Abstract.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/scroll/indicator/"
+                    "path": "sdk/src/scroll/indicator/"
                 },
                 {
                     "clsName": "Ext.scroll.indicator.Default",
                     "name": "Default.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/scroll/indicator/"
+                    "path": "sdk/src/scroll/indicator/"
                 },
                 {
                     "clsName": "Ext.scroll.indicator.ScrollPosition",
                     "name": "ScrollPosition.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/scroll/indicator/"
+                    "path": "sdk/src/scroll/indicator/"
                 },
                 {
                     "clsName": "Ext.scroll.indicator.CssTransform",
                     "name": "CssTransform.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/scroll/indicator/"
+                    "path": "sdk/src/scroll/indicator/"
                 },
                 {
                     "clsName": "Ext.scroll.Indicator",
                     "name": "Indicator.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/scroll/"
+                    "path": "sdk/src/scroll/"
                 },
                 {
                     "clsName": "Ext.scroll.View",
                     "name": "View.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/scroll/"
+                    "path": "sdk/src/scroll/"
                 },
                 {
                     "clsName": "Ext.behavior.Scrollable",
                     "name": "Scrollable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/behavior/"
+                    "path": "sdk/src/behavior/"
                 },
                 {
                     "clsName": "Ext.fx.animation.Abstract",
                     "name": "Abstract.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/animation/"
+                    "path": "sdk/src/fx/animation/"
                 },
                 {
                     "clsName": "Ext.fx.animation.Slide",
                     "name": "Slide.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/animation/"
+                    "path": "sdk/src/fx/animation/"
                 },
                 {
                     "clsName": "Ext.fx.animation.SlideOut",
                     "name": "SlideOut.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/animation/"
+                    "path": "sdk/src/fx/animation/"
                 },
                 {
                     "clsName": "Ext.fx.animation.Fade",
                     "name": "Fade.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/animation/"
+                    "path": "sdk/src/fx/animation/"
                 },
                 {
                     "clsName": "Ext.fx.animation.FadeOut",
                     "name": "FadeOut.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/animation/"
+                    "path": "sdk/src/fx/animation/"
                 },
                 {
                     "clsName": "Ext.fx.animation.Flip",
                     "name": "Flip.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/animation/"
+                    "path": "sdk/src/fx/animation/"
                 },
                 {
                     "clsName": "Ext.fx.animation.Pop",
                     "name": "Pop.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/animation/"
+                    "path": "sdk/src/fx/animation/"
                 },
                 {
                     "clsName": "Ext.fx.animation.PopOut",
                     "name": "PopOut.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/animation/"
+                    "path": "sdk/src/fx/animation/"
                 },
                 {
                     "clsName": "Ext.fx.Animation",
                     "name": "Animation.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/"
+                    "path": "sdk/src/fx/"
                 },
                 {
                     "clsName": "Ext.fx.layout.card.Style",
                     "name": "Style.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/layout/card/"
+                    "path": "sdk/src/fx/layout/card/"
                 },
                 {
                     "clsName": "Ext.fx.layout.card.Slide",
                     "name": "Slide.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/layout/card/"
+                    "path": "sdk/src/fx/layout/card/"
                 },
                 {
                     "clsName": "Ext.fx.layout.card.Cover",
                     "name": "Cover.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/layout/card/"
+                    "path": "sdk/src/fx/layout/card/"
                 },
                 {
                     "clsName": "Ext.fx.layout.card.Reveal",
                     "name": "Reveal.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/layout/card/"
+                    "path": "sdk/src/fx/layout/card/"
                 },
                 {
                     "clsName": "Ext.fx.layout.card.Fade",
                     "name": "Fade.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/layout/card/"
+                    "path": "sdk/src/fx/layout/card/"
                 },
                 {
                     "clsName": "Ext.fx.layout.card.Flip",
                     "name": "Flip.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/layout/card/"
+                    "path": "sdk/src/fx/layout/card/"
                 },
                 {
                     "clsName": "Ext.fx.layout.card.Pop",
                     "name": "Pop.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/layout/card/"
+                    "path": "sdk/src/fx/layout/card/"
                 },
                 {
                     "clsName": "Ext.fx.layout.Card",
                     "name": "Card.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/layout/"
+                    "path": "sdk/src/fx/layout/"
                 },
                 {
                     "clsName": "Ext.layout.Card",
                     "name": "Card.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/layout/"
+                    "path": "sdk/src/layout/"
                 },
                 {
                     "clsName": "Ext.layout.Layout",
                     "name": "Layout.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/layout/"
+                    "path": "sdk/src/layout/"
                 },
                 {
                     "clsName": "Ext.Container",
                     "name": "Container.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.dataview.component.DataItem",
                     "name": "DataItem.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/dataview/component/"
+                    "path": "sdk/src/dataview/component/"
                 },
                 {
                     "clsName": "Ext.dataview.component.Container",
                     "name": "Container.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/dataview/component/"
+                    "path": "sdk/src/dataview/component/"
                 },
                 {
                     "clsName": "Ext.dataview.DataView",
                     "name": "DataView.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/dataview/"
+                    "path": "sdk/src/dataview/"
                 },
                 {
                     "clsName": "Ext.util.Point",
                     "name": "Point.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.event.Touch",
                     "name": "Touch.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/"
+                    "path": "sdk/src/event/"
                 },
                 {
                     "clsName": "Ext.event.publisher.TouchGesture",
                     "name": "TouchGesture.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/publisher/"
+                    "path": "sdk/src/event/publisher/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.Recognizer",
                     "name": "Recognizer.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.Touch",
                     "name": "Touch.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.SingleTouch",
                     "name": "SingleTouch.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.Drag",
                     "name": "Drag.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.Tap",
                     "name": "Tap.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.DoubleTap",
                     "name": "DoubleTap.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.LongPress",
                     "name": "LongPress.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.Swipe",
                     "name": "Swipe.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.HorizontalSwipe",
                     "name": "HorizontalSwipe.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.MultiTouch",
                     "name": "MultiTouch.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.Pinch",
                     "name": "Pinch.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.event.recognizer.Rotate",
                     "name": "Rotate.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/recognizer/"
+                    "path": "sdk/src/event/recognizer/"
                 },
                 {
                     "clsName": "Ext.ComponentQuery",
                     "name": "ComponentQuery.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.event.publisher.ComponentDelegation",
                     "name": "ComponentDelegation.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/publisher/"
+                    "path": "sdk/src/event/publisher/"
                 },
                 {
                     "clsName": "Ext.event.publisher.ComponentPaint",
                     "name": "ComponentPaint.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/publisher/"
+                    "path": "sdk/src/event/publisher/"
                 },
                 {
                     "clsName": "Ext.event.publisher.ComponentSize",
                     "name": "ComponentSize.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/event/publisher/"
+                    "path": "sdk/src/event/publisher/"
                 },
                 {
                     "clsName": "Ext.log.Base",
                     "name": "Base.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/log/"
+                    "path": "sdk/src/log/"
                 },
                 {
                     "clsName": "Ext.log.Logger",
                     "name": "Logger.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/log/"
+                    "path": "sdk/src/log/"
                 },
                 {
                     "clsName": "Ext.log.formatter.Formatter",
                     "name": "Formatter.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/log/formatter/"
+                    "path": "sdk/src/log/formatter/"
                 },
                 {
                     "clsName": "Ext.log.writer.Writer",
                     "name": "Writer.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/log/writer/"
+                    "path": "sdk/src/log/writer/"
                 },
                 {
                     "clsName": "Ext.log.writer.Console",
                     "name": "Console.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/log/writer/"
+                    "path": "sdk/src/log/writer/"
                 },
                 {
                     "clsName": "Ext.log.formatter.Default",
                     "name": "Default.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/log/formatter/"
+                    "path": "sdk/src/log/formatter/"
                 },
                 {
                     "clsName": "Ext.fx.runner.Css",
                     "name": "Css.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/runner/"
+                    "path": "sdk/src/fx/runner/"
                 },
                 {
                     "clsName": "Ext.fx.runner.CssTransition",
                     "name": "CssTransition.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/runner/"
+                    "path": "sdk/src/fx/runner/"
                 },
                 {
                     "clsName": "Ext.fx.Runner",
                     "name": "Runner.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/fx/"
+                    "path": "sdk/src/fx/"
                 },
                 {
                     "clsName": "Ext.viewport.Default",
                     "name": "Default.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/viewport/"
+                    "path": "sdk/src/viewport/"
                 },
                 {
                     "clsName": "Ext.viewport.Ios",
                     "name": "Ios.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/viewport/"
+                    "path": "sdk/src/viewport/"
                 },
                 {
                     "clsName": "Ext.viewport.Android",
                     "name": "Android.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/viewport/"
+                    "path": "sdk/src/viewport/"
                 },
                 {
                     "clsName": "Ext.viewport.Viewport",
                     "name": "Viewport.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/viewport/"
+                    "path": "sdk/src/viewport/"
                 },
                 {
                     "clsName": "Ext.app.Controller",
                     "name": "Controller.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/app/"
+                    "path": "sdk/src/app/"
                 },
                 {
                     "clsName": "Ext.app.History",
                     "name": "History.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/app/"
+                    "path": "sdk/src/app/"
                 },
                 {
                     "clsName": "Ext.app.Profile",
                     "name": "Profile.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/app/"
+                    "path": "sdk/src/app/"
                 },
                 {
                     "clsName": "Ext.app.Action",
                     "name": "Action.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/app/"
+                    "path": "sdk/src/app/"
                 },
                 {
                     "clsName": "Ext.app.Route",
                     "name": "Route.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/app/"
+                    "path": "sdk/src/app/"
                 },
                 {
                     "clsName": "Ext.app.Router",
                     "name": "Router.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/app/"
+                    "path": "sdk/src/app/"
                 },
                 {
                     "clsName": "Ext.app.Application",
                     "name": "Application.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/app/"
+                    "path": "sdk/src/app/"
                 },
                 {
                     "clsName": "Ext.data.Operation",
                     "name": "Operation.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.util.Grouper",
                     "name": "Grouper.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.data.identifier.Simple",
                     "name": "Simple.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/identifier/"
+                    "path": "sdk/src/data/identifier/"
                 },
                 {
                     "clsName": "Ext.data.SortTypes",
                     "name": "SortTypes.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.util.Inflector",
                     "name": "Inflector.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.data.Error",
                     "name": "Error.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.data.Batch",
                     "name": "Batch.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.util.HashMap",
                     "name": "HashMap.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.data.Request",
                     "name": "Request.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.data.Connection",
                     "name": "Connection.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.data.writer.Writer",
                     "name": "Writer.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/writer/"
+                    "path": "sdk/src/data/writer/"
                 },
                 {
                     "clsName": "Ext.data.ResultSet",
                     "name": "ResultSet.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.data.Errors",
                     "name": "Errors.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.data.Types",
                     "name": "Types.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.data.Field",
                     "name": "Field.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.AbstractManager",
                     "name": "AbstractManager.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.data.ModelManager",
                     "name": "ModelManager.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.Ajax",
                     "name": "Ajax.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.data.association.Association",
                     "name": "Association.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/association/"
+                    "path": "sdk/src/data/association/"
                 },
                 {
                     "clsName": "Ext.data.association.HasMany",
                     "name": "HasMany.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/association/"
+                    "path": "sdk/src/data/association/"
                 },
                 {
                     "clsName": "Ext.data.association.BelongsTo",
                     "name": "BelongsTo.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/association/"
+                    "path": "sdk/src/data/association/"
                 },
                 {
                     "clsName": "Ext.data.association.HasOne",
                     "name": "HasOne.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/association/"
+                    "path": "sdk/src/data/association/"
                 },
                 {
                     "clsName": "Ext.data.writer.Json",
                     "name": "Json.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/writer/"
+                    "path": "sdk/src/data/writer/"
                 },
                 {
                     "clsName": "Ext.data.reader.Reader",
                     "name": "Reader.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/reader/"
+                    "path": "sdk/src/data/reader/"
                 },
                 {
                     "clsName": "Ext.data.reader.Json",
                     "name": "Json.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/reader/"
+                    "path": "sdk/src/data/reader/"
                 },
                 {
                     "clsName": "Ext.data.proxy.Proxy",
                     "name": "Proxy.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/proxy/"
+                    "path": "sdk/src/data/proxy/"
                 },
                 {
                     "clsName": "Ext.data.proxy.Client",
                     "name": "Client.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/proxy/"
+                    "path": "sdk/src/data/proxy/"
                 },
                 {
                     "clsName": "Ext.data.proxy.Memory",
                     "name": "Memory.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/proxy/"
+                    "path": "sdk/src/data/proxy/"
                 },
                 {
                     "clsName": "Ext.data.proxy.Server",
                     "name": "Server.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/proxy/"
+                    "path": "sdk/src/data/proxy/"
                 },
                 {
                     "clsName": "Ext.data.proxy.Ajax",
                     "name": "Ajax.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/proxy/"
+                    "path": "sdk/src/data/proxy/"
                 },
                 {
                     "clsName": "Ext.data.Model",
                     "name": "Model.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.data.Store",
                     "name": "Store.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.data.ArrayStore",
                     "name": "ArrayStore.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.data.reader.Array",
                     "name": "Array.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/reader/"
+                    "path": "sdk/src/data/reader/"
                 },
                 {
                     "clsName": "Ext.Img",
                     "name": "Img.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.data.JsonStore",
                     "name": "JsonStore.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/data/"
+                    "path": "sdk/src/data/"
                 },
                 {
                     "clsName": "Ext.chart.interactions.Manager",
                     "name": "Manager.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/interactions/"
+                    "path": "sdk/src/chart/interactions/"
                 },
                 {
                     "clsName": "Ext.util.TapRepeater",
                     "name": "TapRepeater.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.util.Geolocation",
                     "name": "Geolocation.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.chart.theme.Theme",
                     "name": "Theme.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 },
                 {
                     "clsName": "Ext.chart.Label",
                     "name": "Label.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/"
+                    "path": "sdk/src/chart/"
                 },
                 {
                     "clsName": "Ext.chart.Highlight",
                     "name": "Highlight.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/"
+                    "path": "sdk/src/chart/"
                 },
                 {
                     "clsName": "Ext.chart.Callout",
                     "name": "Callout.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/"
+                    "path": "sdk/src/chart/"
                 },
                 {
                     "clsName": "Ext.chart.Transformable",
                     "name": "Transformable.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/"
+                    "path": "sdk/src/chart/"
                 },
                 {
                     "clsName": "Ext.chart.series.ItemEvents",
                     "name": "ItemEvents.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/series/"
+                    "path": "sdk/src/chart/series/"
                 },
                 {
                     "clsName": "Ext.chart.interactions.Abstract",
                     "name": "Abstract.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/interactions/"
+                    "path": "sdk/src/chart/interactions/"
                 },
                 {
                     "clsName": "Ext.chart.interactions.DelayedSync",
                     "name": "DelayedSync.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/interactions/"
+                    "path": "sdk/src/chart/interactions/"
                 },
                 {
                     "clsName": "Ext.Button",
                     "name": "Button.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.Title",
                     "name": "Title.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.Spacer",
                     "name": "Spacer.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.chart.axis.Abstract",
                     "name": "Abstract.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/axis/"
+                    "path": "sdk/src/chart/axis/"
                 },
                 {
                     "clsName": "Ext.util.LineSegment",
                     "name": "LineSegment.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/util/"
+                    "path": "sdk/src/util/"
                 },
                 {
                     "clsName": "Ext.Decorator",
                     "name": "Decorator.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.field.Input",
                     "name": "Input.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/field/"
+                    "path": "sdk/src/field/"
                 },
                 {
                     "clsName": "Ext.Map",
                     "name": "Map.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.chart.Chart",
                     "name": "Chart.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/"
+                    "path": "sdk/src/chart/"
                 },
                 {
                     "clsName": "Ext.chart.series.Series",
                     "name": "Series.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/series/"
+                    "path": "sdk/src/chart/series/"
                 },
                 {
                     "clsName": "Ext.chart.series.Pie",
                     "name": "Pie.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/series/"
+                    "path": "sdk/src/chart/series/"
                 },
                 {
                     "clsName": "Ext.chart.interactions.ItemInfo",
                     "name": "ItemInfo.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/interactions/"
+                    "path": "sdk/src/chart/interactions/"
                 },
                 {
                     "clsName": "Ext.chart.interactions.Rotate",
                     "name": "Rotate.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/interactions/"
+                    "path": "sdk/src/chart/interactions/"
                 },
                 {
                     "clsName": "Ext.chart.interactions.ItemHighlight",
                     "name": "ItemHighlight.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/interactions/"
+                    "path": "sdk/src/chart/interactions/"
                 },
                 {
                     "clsName": "Ext.Toolbar",
                     "name": "Toolbar.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.chart.axis.Axis",
                     "name": "Axis.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/axis/"
+                    "path": "sdk/src/chart/axis/"
                 },
                 {
                     "clsName": "Ext.chart.axis.Numeric",
                     "name": "Numeric.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/axis/"
+                    "path": "sdk/src/chart/axis/"
                 },
                 {
                     "clsName": "Ext.chart.axis.Category",
                     "name": "Category.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/axis/"
+                    "path": "sdk/src/chart/axis/"
                 },
                 {
                     "clsName": "Ext.Panel",
                     "name": "Panel.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.Sheet",
                     "name": "Sheet.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.field.Field",
                     "name": "Field.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/field/"
+                    "path": "sdk/src/field/"
                 },
                 {
                     "clsName": "Ext.field.Text",
                     "name": "Text.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/field/"
+                    "path": "sdk/src/field/"
                 },
                 {
                     "clsName": "Ext.field.Search",
                     "name": "Search.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/field/"
+                    "path": "sdk/src/field/"
                 },
                 {
                     "clsName": "Ext.field.Number",
                     "name": "Number.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/field/"
+                    "path": "sdk/src/field/"
                 },
                 {
                     "clsName": "Ext.field.Spinner",
                     "name": "Spinner.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/field/"
+                    "path": "sdk/src/field/"
                 },
                 {
                     "clsName": "Ext.field.TextAreaInput",
                     "name": "TextAreaInput.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/field/"
+                    "path": "sdk/src/field/"
                 },
                 {
                     "clsName": "Ext.field.TextArea",
                     "name": "TextArea.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/field/"
+                    "path": "sdk/src/field/"
                 },
                 {
                     "clsName": "Ext.MessageBox",
                     "name": "MessageBox.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.chart.series.Cartesian",
                     "name": "Cartesian.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/series/"
+                    "path": "sdk/src/chart/series/"
                 },
                 {
                     "clsName": "Ext.chart.series.Bar",
                     "name": "Bar.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/series/"
+                    "path": "sdk/src/chart/series/"
                 },
                 {
                     "clsName": "Ext.chart.series.Column",
                     "name": "Column.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/series/"
+                    "path": "sdk/src/chart/series/"
                 },
                 {
                     "clsName": "InnovationFinDashBoard.model.DimensionModel",
@@ -1105,6 +1105,11 @@
                     "path": "app/view/"
                 },
                 {
+                    "clsName": "InnovationFinDashBoard.view.TabView",
+                    "name": "TabView.js",
+                    "path": "app/view/"
+                },
+                {
                     "clsName": "InnovationFinDashBoard.controller.ChartViewController",
                     "name": "ChartViewController.js",
                     "path": "app/controller/"
@@ -1147,22 +1152,22 @@
                 {
                     "clsName": "Ext.TitleBar",
                     "name": "TitleBar.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/"
+                    "path": "sdk/src/"
                 },
                 {
                     "clsName": "Ext.tab.Tab",
                     "name": "Tab.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/tab/"
+                    "path": "sdk/src/tab/"
                 },
                 {
                     "clsName": "Ext.navigation.Bar",
                     "name": "Bar.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/navigation/"
+                    "path": "sdk/src/navigation/"
                 },
                 {
                     "clsName": "Ext.navigation.View",
                     "name": "View.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/navigation/"
+                    "path": "sdk/src/navigation/"
                 },
                 {
                     "clsName": "InnovationFinDashBoard.view.Main",
@@ -1172,12 +1177,12 @@
                 {
                     "clsName": "Ext.tab.Bar",
                     "name": "Bar.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/tab/"
+                    "path": "sdk/src/tab/"
                 },
                 {
                     "clsName": "Ext.tab.Panel",
                     "name": "Panel.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/tab/"
+                    "path": "sdk/src/tab/"
                 },
                 {
                     "clsName": "InnovationFinDashBoard.view.TabViewShow",
@@ -1192,52 +1197,52 @@
                 {
                     "clsName": "Ext.chart.theme.Base",
                     "name": "Base.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 },
                 {
                     "clsName": "Ext.chart.theme.Style",
                     "name": "Style.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 },
                 {
                     "clsName": "Ext.chart.theme.HighlightStyle",
                     "name": "HighlightStyle.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 },
                 {
                     "clsName": "Ext.chart.theme.CalloutStyle",
                     "name": "CalloutStyle.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 },
                 {
                     "clsName": "Ext.chart.theme.TitleStyle",
                     "name": "TitleStyle.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 },
                 {
                     "clsName": "Ext.chart.theme.LabelStyle",
                     "name": "LabelStyle.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 },
                 {
                     "clsName": "Ext.chart.theme.GridStyle",
                     "name": "GridStyle.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 },
                 {
                     "clsName": "Ext.chart.theme.MarkerStyle",
                     "name": "MarkerStyle.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 },
                 {
                     "clsName": "Ext.chart.theme.OddStyle",
                     "name": "OddStyle.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 },
                 {
                     "clsName": "Ext.chart.theme.EvenStyle",
                     "name": "EvenStyle.js",
-                    "path": "../../../../Program%20Files/apache-tomcat-7.0.30/webapps/InnovationFinDashBoard/sdk/src/chart/theme/"
+                    "path": "sdk/src/chart/theme/"
                 }
             ]
         },

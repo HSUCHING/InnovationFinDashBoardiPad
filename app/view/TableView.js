@@ -31,8 +31,8 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                     tap:function(){
                         console.log(this.parent.parent.context);
                         Ext.Ajax.request({
-                            url:'resources/json/table.json',
-//                            url:'http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=table&tableitem='+this.parent.parent.context,
+//                            url:'resources/json/table.json',
+                            url:'http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=table&tableitem='+this.parent.parent.context,
                             success:function(response,opts){
 //                                var obj=Ext.decode(response.responseText);
 //                                console.log(obj);
@@ -71,7 +71,7 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                                   '<th class="left">{#}</th>',
                                   '<th><tpl if="field1Value!=&quot;&quot;">{field1Value}</tpl><tpl if="field1Value==&quot;&quot;">NULL</tpl></th>',
 //                                        '<th><tpl if="field4Value!=&quot;&quot;">{field4Value}</tpl><tpl if="field4Value==&quot;&quot;">NULL</tpl></th>',
-                                  '<th class="right"><tpl if="value&gt;0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
+                                  '<th class="right"><tpl if="value&gt;=0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
                                   '</tr>',
                                   '</tpl>',
                                   '</tpl>',
@@ -82,8 +82,6 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
 
 //                                Ext.getCmp('tabledataview').add({xtype:'panel',html:this.parent.parent.context});
                                 Ext.getCmp('tabledataview').setHtml(tplHtml);
-
-
 
                             },
                             failure:function(response,opts){
@@ -135,7 +133,20 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
             },{
                 xtype:'spacer',
                 width:10
-            },{
+            },
+//                {
+//                    xtype:'spinnerfield',
+//                    id:'spinnertoolbar',
+//                    maxValue:2012,
+//                    minValue:1990,
+//                    value:2000,
+//                    increment:1,
+//                    groupButtons:false,
+//                    width:250,
+//                    label: 'Year:',
+//                    cycle: true
+//            },
+                {
                 text:'Q1'
             },{
                 text:'Q2'
@@ -158,9 +169,70 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
             ]
         }
         ]
-
     },
 
+    listeners:{
+      show:function(){
+          Ext.Ajax.request({
+//              url:'resources/json/table.json',
+                            url:'http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=table&tableitem='+Ext.getCmp('TabView').title,
+              success:function(response,opts){
+//                                var obj=Ext.decode(response.responseText);
+//                                console.log(obj);
+//                                console.log(response.responseText);
+
+                  var tablevdata=Ext.decode(response.responseText);
+                  var tpl = new Ext.XTemplate('<table id="tableshow">',
+                      '<thead>',
+                      '<tr>',
+                      '<th class="theadsidetitle left">No.</th>',
+                      '<th class="theadside">{field1}</th>',
+                      '<tpl if="field2!=&quot;&quot;">',
+                      '<th class="theadside">{field2}</th>',
+                      '<th class="theadside">{field3}</th>',
+//                                    '<th class="theadside">{field4}</th>',
+                      '</tpl>',
+                      '<th class="theadside right">{value}</th>',
+                      '</tr>',
+                      '</thead>',
+                      '<tbody>',
+                      '<tpl if="field2!=&quot;&quot;">',
+                      '<tpl for="items">',
+                      '<tr class="choice" onclick="activateThisColumn(\'choice\',this)">',
+                      '<th class="left">{#}</th>',
+                      '<th><tpl if="field1Value!=&quot;&quot;">{field1Value}</tpl><tpl if="field1Value==&quot;&quot;">NULL</tpl></th>',
+                      '<th><tpl if="field2Value!=&quot;&quot;">{field2Value}</tpl><tpl if="field2Value==&quot;&quot;">NULL</tpl></th>',
+                      '<th><tpl if="field3Value!=&quot;&quot;">{field3Value}</tpl><tpl if="field3Value==&quot;&quot;">NULL</tpl></th>',
+//                                        '<th><tpl if="field4Value!=&quot;&quot;">{field4Value}</tpl><tpl if="field4Value==&quot;&quot;">NULL</tpl></th>',
+                      '<th class="right"><tpl if="value&gt;0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
+                      '</tr>',
+                      '</tpl>',
+                      '</tpl>',
+                      '<tpl if="field2==&quot;&quot;">',
+                      '<tpl for="items">',
+                      '<tr class="choice" onclick="activateThisColumn(\'choice\',this)">',
+                      '<th class="left">{#}</th>',
+                      '<th><tpl if="field1Value!=&quot;&quot;">{field1Value}</tpl><tpl if="field1Value==&quot;&quot;">NULL</tpl></th>',
+//                                        '<th><tpl if="field4Value!=&quot;&quot;">{field4Value}</tpl><tpl if="field4Value==&quot;&quot;">NULL</tpl></th>',
+                      '<th class="right"><tpl if="value&gt;=0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
+                      '</tr>',
+                      '</tpl>',
+                      '</tpl>',
+                      '</tbody>',
+                      '</table>');
+
+                  var tplHtml=tpl.apply(tablevdata);
+
+//                                Ext.getCmp('tabledataview').add({xtype:'panel',html:this.parent.parent.context});
+                  Ext.getCmp('tabledataview').setHtml(tplHtml);
+
+              },
+              failure:function(response,opts){
+                  console.log("Error");
+              }
+          })
+      }
+    },
     follow:function(){
         console.log(this);
     }
