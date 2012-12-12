@@ -9731,6 +9731,9 @@ input[type="search"]::-webkit-search-cancel-button {
     /*background:url('../images/Logo.png') no-repeat center -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b8c4cb), to(#f6f6f8)) !important;*/
 }
 
+#tableview{
+    background:-webkit-linear-gradient(top,#FBFFFA,#FBFFFA) !important;
+}
 .rightflipdisable{
     /*background: rgb(220,220,220) url('../icons/navigation_right_arrow.png') no-repeat center center !important;*/
     background-image: url('../icons/navigation_right_arrow.png');
@@ -9777,7 +9780,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #dimensionbar2{
-    background: -webkit-linear-gradient(top, #0064a9, #0d65ea)  !important;
+    background: -webkit-linear-gradient(top, #0064a9, #136299)  !important;
 }
 
 #space{
@@ -9786,7 +9789,9 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #tabledataview{
-    /*margin-top: 100px;*/
+    padding-top: 20px;
+    padding-bottom:50px;
+
 }
 
 .rightchart{

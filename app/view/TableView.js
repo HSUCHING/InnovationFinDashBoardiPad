@@ -17,7 +17,6 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
             align:'stretch',
             pack:'center'
         },
-
         items:[{
             xtype: 'toolbar',
 //            title:'我的标题栏',
