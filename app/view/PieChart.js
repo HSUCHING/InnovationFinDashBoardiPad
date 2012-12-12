@@ -10,6 +10,7 @@ Ext.define('InnovationFinDashBoard.view.PieChart', {
     extend: 'Ext.chart.Chart',
     config: {
         title: 'Pie',
+        id:'piechart',
         iconCls: 'pie',
         cls: 'chartpanel',
         animate: true,
@@ -26,7 +27,7 @@ Ext.define('InnovationFinDashBoard.view.PieChart', {
         ],
         series: [{
             type: 'pie',
-            field:'CompanyA',
+            field:'Q1',
             animate: true,
             interactions: ['rotate', 'reset'],
             highlight: true,
@@ -38,7 +39,7 @@ Ext.define('InnovationFinDashBoard.view.PieChart', {
 //                }
 //            },
             label: {
-                field: 'Qua',   //bind label text to name
+                field: 'Company',   //bind label text to name
                 display: 'rotate', //rotate labels (also middle, out).
                 font: '14px "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif',
 //                contrast: true

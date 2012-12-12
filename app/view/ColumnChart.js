@@ -13,6 +13,7 @@ Ext.define('InnovationFinDashBoard.view.ColumnChart', {
         iconCls: 'column',
         cls: 'chartpanel',
         id:'columnchart',
+        autoDestory:true,
 //        interactions: ['reset', {
 //            type: 'panzoom'
 //        }, {
@@ -57,7 +58,7 @@ Ext.define('InnovationFinDashBoard.view.ColumnChart', {
                     font: '15px Arial',
                     fill:'yellow'
                 },
-                title: 'Company'
+                title: 'Area'
             }
         ],
         legend: {

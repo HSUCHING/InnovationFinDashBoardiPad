@@ -33,12 +33,87 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
             listeners: {
                 maprender: function(comp, map) {
 
-                    var infowindowsh = new google.maps.InfoWindow({
-                        content: '上海(4 Company)'
+                    var infoBubble1 = new InfoBubble({
+                        map: map,
+                        content: '<div class="phoneytext">Shanghai</div>',
+                        position: new google.maps.LatLng(31.23, 121.47),
+                        maxWidth:150,
+                        maxHeight:50,
+                        shadowStyle: 1,
+                        padding: 0,
+                        backgroundColor: 'rgb(57,57,57)',
+                        borderRadius: 4,
+                        arrowSize: 10,
+                        borderWidth: 1,
+                        borderColor: '#2c2c2c',
+                        disableAutoPan: true,
+                        hideCloseButton: true,
+                        arrowPosition: 30,
+                        backgroundClassName: 'phoney',
+                        arrowStyle: 2
                     });
-                    var infowindowbj = new google.maps.InfoWindow({
-                        content: '北京(4 Company)'
+
+                    var infoBubble2 = new InfoBubble({
+                        map: map,
+                        content: '<div class="phoneytext">Beijing</div>',
+                        position: new google.maps.LatLng(39.90, 116.40),
+                        maxWidth:150,
+                        maxHeight:50,
+                        shadowStyle: 1,
+                        padding: 0,
+                        backgroundColor: 'rgb(57,57,57)',
+                        borderRadius: 4,
+                        arrowSize: 10,
+                        borderWidth: 1,
+                        borderColor: '#2c2c2c',
+                        disableAutoPan: true,
+                        hideCloseButton: true,
+                        arrowPosition: 30,
+                        backgroundClassName: 'phoney',
+                        arrowStyle: 2
                     });
+
+
+                    var infoBubble3 = new InfoBubble({
+                        map: map,
+                        content: '<div class="phoneytext">Chengdu</div>',
+                        position: new google.maps.LatLng(30.67, 104.06),
+                        maxWidth:150,
+                        maxHeight:50,
+                        shadowStyle: 1,
+                        padding: 0,
+                        backgroundColor: 'rgb(57,57,57)',
+                        borderRadius: 4,
+                        arrowSize: 10,
+                        borderWidth: 1,
+                        borderColor: '#2c2c2c',
+                        disableAutoPan: true,
+                        hideCloseButton: true,
+                        arrowPosition: 30,
+                        backgroundClassName: 'phoney',
+                        arrowStyle: 2
+                    });
+
+                    var infoBubble4 = new InfoBubble({
+                        map: map,
+                        content: '<div class="phoneytext">Nanjing</div>',
+                        position: new google.maps.LatLng(32.04, 118.78),
+                        maxWidth:150,
+                        maxHeight:50,
+                        shadowStyle: 1,
+                        padding: 0,
+                        backgroundColor: 'rgb(57,57,57)',
+                        borderRadius: 4,
+                        arrowSize: 10,
+                        borderWidth: 1,
+                        borderColor: '#2c2c2c',
+                        disableAutoPan: true,
+                        hideCloseButton: true,
+                        arrowPosition: 30,
+                        backgroundClassName: 'phoney',
+                        arrowStyle: 2
+                    });
+
 
                     //latlng
                     var latlngSh = new google.maps.LatLng(
@@ -57,6 +132,23 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                         //            coords.longitude
                     );
 
+                    var latlngCd = new google.maps.LatLng(
+                        //            纬度
+                        //            coords.latitude,
+                        30.67, 104.06
+                        //            经度
+                        //            coords.longitude
+                    );
+
+                    var latlngNj = new google.maps.LatLng(
+                        //            纬度
+                        //            coords.latitude,
+                        32.04, 118.78
+                        //            经度
+                        //            coords.longitude
+                    );
+
+
                     var marker1 = new google.maps.Marker({
                         position: latlngSh,
                         title: 'Shanghai',
@@ -65,6 +157,16 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                     var marker2 = new google.maps.Marker({
                         position: latlngBj,
                         title: 'Beijing',
+                        map: map
+                    });
+                    var marker3 = new google.maps.Marker({
+                        position: latlngCd,
+                        title: 'Chengdu',
+                        map: map
+                    });
+                    var marker4 = new google.maps.Marker({
+                        position: latlngNj,
+                        title: 'Nanjing',
                         map: map
                     });
 
@@ -82,6 +184,16 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                                 infowindowbj.open(map, marker);
                                 break;
                             }
+                            case "Chengdu":
+                            {
+                                infowindowcd.open(map, marker);
+                                break;
+                            }
+                            case "Nanjing":
+                            {
+                                infowindownj.open(map, marker);
+                                break;
+                            }
                             default:
                             {
                                 break;
@@ -89,13 +201,29 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                         }
 
                     };
+
                     google.maps.event.addListener(marker1, 'click',
                         function(event) {
-                            renderChart(marker1);
+//                            renderChart(marker1);
+                            infoBubble1.open(map,marker1);
                             var store=Ext.getStore('ChartStore');
-                            store.data.items[0].data.Q1=18782;
-//                            Ext.chart.getChart()
+                            store.setProxy({
+                                type:'ajax',
+                                url:'resources/json/chart/chartstoresh.json',
+                                reader:{
+                                    type:'json',
+                                    rootProperty: 'items'
+                                }
+                            });
+                            store.load();
+                            Ext.getCmp('columnchart').setStore(store);
+                            Ext.getCmp('columnchart').getAxes().get('bottom').setTitle("Company");
                             Ext.getCmp('columnchart').redraw();
+                            Ext.getCmp('piechart').setStore(store);
+                            Ext.getCmp('piechart').redraw();
+
+//                            store.data.items[0].data.Q1=18782;
+//                            Ext.chart.getChart()
 //                            if(Ext.getCmp('rightchart').showed==false){
 //                                Ext.getCmp('rightchart').add({xtype:'chartpanel',height:525});
 //                                Ext.getCmp('rightchart').show();
@@ -104,8 +232,66 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                         });
                     google.maps.event.addListener(marker2, 'click',
                         function(event) {
-                            renderChart(marker2)
+                            infoBubble2.open(map,marker2);
+                            var store=Ext.getStore('ChartStore');
+                            store.setProxy({
+                                type:'ajax',
+                                url:'resources/json/chart/chartstorebj.json',
+                                reader:{
+                                    type:'json',
+                                    rootProperty: 'items'
+                                }
+                            });
+                            store.load();
+
+                            Ext.getCmp('columnchart').setStore(store);
+                            Ext.getCmp('columnchart').getAxes().get('bottom').setTitle("Company");
+                            Ext.getCmp('columnchart').redraw();
+                            Ext.getCmp('piechart').setStore(store);
+                            Ext.getCmp('piechart').redraw();
                         });
+                    google.maps.event.addListener(marker3, 'click',
+                        function(event) {
+                            infoBubble3.open(map,marker3);
+                            var store=Ext.getStore('ChartStore');
+                            store.setProxy({
+                                type:'ajax',
+                                url:'resources/json/chart/chartstorecd.json',
+                                reader:{
+                                    type:'json',
+                                    rootProperty: 'items'
+                                }
+                            });
+                            store.load();
+                            Ext.getCmp('columnchart').setStore(store);
+                            Ext.getCmp('columnchart').getAxes().get('bottom').setTitle("Company");
+                            Ext.getCmp('columnchart').redraw();
+                            Ext.getCmp('piechart').setStore(store);
+                            Ext.getCmp('piechart').redraw();
+                        });
+                    google.maps.event.addListener(marker4, 'click',
+                        function(event) {
+                            infoBubble4.open(map,marker4);
+                            var store=Ext.getStore('ChartStore');
+                            store.setProxy({
+                                type:'ajax',
+                                url:'resources/json/chart/chartstorenj.json',
+                                reader:{
+                                    type:'json',
+                                    rootProperty: 'items'
+                                }
+                            });
+                            store.load();
+                            Ext.getCmp('columnchart').setStore(store);
+                            Ext.getCmp('columnchart').getAxes().get('bottom').setTitle("Company");
+                            Ext.getCmp('columnchart').redraw();
+                            Ext.getCmp('piechart').setStore(store);
+                            Ext.getCmp('piechart').redraw();
+                        });
+//                    google.maps.event.addListener(marker2, 'click',
+//                        function(event) {
+//                            renderChart(marker2)
+//                        });
                 }
             }
         }]

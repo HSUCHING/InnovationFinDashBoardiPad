@@ -12,7 +12,7 @@ Ext.define('InnovationFinDashBoard.store.ChartStore', {
         autoLoad:true,
         proxy:{
             type:'ajax',
-            url:'resources/json/chart/chartstore.json',
+            url:'resources/json/chart/chartstoreall.json',
             reader:{
                 type:'json',
                 rootProperty: 'items'

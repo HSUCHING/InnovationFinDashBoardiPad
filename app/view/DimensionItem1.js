@@ -58,8 +58,13 @@ Ext.define("InnovationFinDashBoard.view.DimensionItem1", {
                                  Ext.getCmp('leftmap').add({xtype:'mapPanel'});
                                  Ext.getCmp('rightchart').add({xtype:'chartpanel',height:525});
                                  this.taped=true;
+                            }else{
+                                Ext.getCmp('leftmap').removeAll();
+                                Ext.getCmp('leftmap').add({xtype:'mapPanel'});
+                                Ext.getCmp('rightchart').removeAll();
+                                Ext.getCmp('rightchart').add({xtype:'chartpanel',height:525});
+                                this.taped=true;
                             }
-
                         }
                     }
                 }],
