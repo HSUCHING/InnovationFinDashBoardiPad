@@ -9773,7 +9773,11 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 #dimensionbar{
-    background-color: blue !important;
+    background: -webkit-linear-gradient(top, #00bfff, #1e90ff)  !important;
+}
+
+#dimensionbar2{
+    background: -webkit-linear-gradient(top, #0064a9, #0d65ea)  !important;
 }
 
 #space{

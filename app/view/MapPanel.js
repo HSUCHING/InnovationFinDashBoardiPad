@@ -97,7 +97,7 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                     var infoBubble4 = new InfoBubble({
                         map: map,
                         content: '<div class="phoneytext">Nanjing</div>',
-                        position: new google.maps.LatLng(32.04, 118.78),
+//                        position: new google.maps.LatLng(32.04, 118.78),
                         maxWidth:150,
                         maxHeight:50,
                         shadowStyle: 1,
@@ -288,10 +288,10 @@ Ext.define("InnovationFinDashBoard.view.MapPanel", {
                             Ext.getCmp('piechart').setStore(store);
                             Ext.getCmp('piechart').redraw();
                         });
-//                    google.maps.event.addListener(marker2, 'click',
-//                        function(event) {
-//                            renderChart(marker2)
-//                        });
+                    google.maps.event.addListener(marker2, 'click',
+                        function(event) {
+                            renderChart(marker2)
+                        });
                 }
             }
         }]

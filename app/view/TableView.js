@@ -31,8 +31,8 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                     tap:function(){
                         console.log(this.parent.parent.context);
                         Ext.Ajax.request({
-//                            url:'resources/json/table.json',
-                            url:'http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=table&tableitem='+this.parent.parent.context,
+                            url:'resources/json/table.json',
+//                            url:'http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=table&tableitem='+this.parent.parent.context,
                             success:function(response,opts){
 //                                var obj=Ext.decode(response.responseText);
 //                                console.log(obj);
@@ -61,7 +61,7 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                                         '<th><tpl if="field2Value!=&quot;&quot;">{field2Value}</tpl><tpl if="field2Value==&quot;&quot;">NULL</tpl></th>',
                                         '<th><tpl if="field3Value!=&quot;&quot;">{field3Value}</tpl><tpl if="field3Value==&quot;&quot;">NULL</tpl></th>',
 //                                        '<th><tpl if="field4Value!=&quot;&quot;">{field4Value}</tpl><tpl if="field4Value==&quot;&quot;">NULL</tpl></th>',
-                                        '<th class="right"><tpl if="value&gt;0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
+                                        '<th class="right"><tpl if="value&gt;=0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
                                         '</tr>',
                                     '</tpl>',
                                   '</tpl>',
@@ -174,8 +174,8 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
     listeners:{
       show:function(){
           Ext.Ajax.request({
-//              url:'resources/json/table.json',
-                            url:'http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=table&tableitem='+Ext.getCmp('TabView').title,
+              url:'resources/json/table.json',
+//                            url:'http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=table&tableitem='+Ext.getCmp('TabView').title,
               success:function(response,opts){
 //                                var obj=Ext.decode(response.responseText);
 //                                console.log(obj);
@@ -204,7 +204,7 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                       '<th><tpl if="field2Value!=&quot;&quot;">{field2Value}</tpl><tpl if="field2Value==&quot;&quot;">NULL</tpl></th>',
                       '<th><tpl if="field3Value!=&quot;&quot;">{field3Value}</tpl><tpl if="field3Value==&quot;&quot;">NULL</tpl></th>',
 //                                        '<th><tpl if="field4Value!=&quot;&quot;">{field4Value}</tpl><tpl if="field4Value==&quot;&quot;">NULL</tpl></th>',
-                      '<th class="right"><tpl if="value&gt;0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
+                      '<th class="right"><tpl if="value&gt;=0">{value}</tpl><tpl if="value&lt;0">{value*(-1)}</tpl><tpl if="value==&quot;&quot;">0</tpl></th>',
                       '</tr>',
                       '</tpl>',
                       '</tpl>',
@@ -219,7 +219,8 @@ Ext.define("InnovationFinDashBoard.view.TableView",{
                       '</tpl>',
                       '</tpl>',
                       '</tbody>',
-                      '</table>');
+                      '</table>'
+                  );
 
                   var tplHtml=tpl.apply(tablevdata);
 

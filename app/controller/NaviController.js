@@ -90,8 +90,8 @@ Ext.define("InnovationFinDashBoard.controller.NaviController", {
 
 
 
-        d3.json("http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=tree",
-//        d3.json("resources/json/tree/tree.json",
+//        d3.json("http://10.58.68.233:8080/KPI_Dashboard/Servlet?appid=1&type=tree",
+        d3.json("resources/json/tree/tree.json",
             function(json) {
                 //    d3.json(jsonresponse, function(json) {
                 root = json;
